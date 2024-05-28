@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://www.wehouse.in/assets/slider/Homepage.png">
 
     <!-- BOOTSTRAP STYLE SHEET -->
-    <link   rel="stylesheet" type="text/css" href="https://www.wehouse.in/new-assets/css/bootstrap.min.css">
+    <link   rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <!-- FONTAWESOME STYLE SHEET -->
     <link  rel="stylesheet" type="text/css" href="https://www.wehouse.in/new-assets/css/fontawesome/css/font-awesome.min.css" />
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     
     <!-- MAIN STYLE SHEET -->
-    <link rel="stylesheet" type="text/css" href="https://www.wehouse.in/new-assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <link  rel="stylesheet" type="text/css" href="https://www.wehouse.in/new-assets/css/responsive.min.css">
     
@@ -214,159 +214,134 @@ gtag('config', 'AW-767771084');
 <body>
 <div class="page-wraper">
         <!-- HEADER START -->
-        <header class="site-header header-style-1">
-          <div class="sticky-header main-bar-wraper">
-            <div class="main-bar">
-              <div class="container">
-                <div class="logo-header">
-                  <div class="logo-header-inner logo-header-one">
-                    <!-- <a href="index.html">
-                      <img src="/img/logo-light.png" alt="Wehouse Logo" class="w-100"/>
-                    </a> -->
-                  </div>
+      <header class="site-header header-style-1">
+        <div class="sticky-header main-bar-wraper">
+          <div class="main-bar">
+            <div class="container">
+              <div class="logo-header d-block d-lg-none">
+                <div class="logo-header-inner logo-header-one">
+                  <!-- <a href="index.html">
+                    <img src="/img/logo-light.png" alt="Wehouse Logo" class="w-100"/>
+                  </a> -->
                 </div>
-                <button
-                  data-target=".header-nav"
-                  data-toggle="collapse"
-                  type="button"
-                  class="navbar-toggle collapsed second-button animated-icon2"
-                >
-                  <!-- <span class="sr-only">Toggle navigation</span> -->
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <!-- ETRA Nav -->
-                <div class="extra-nav">
-                  <div class="extra-cell">
-                    <div data-toggle="modal" data-target="#login">
-                      <i class="fa fa-user"></i>
-                    </div>
-                  </div>
-                  <!--<div class="extra-cell">
-                                  <a href="tel:9704624696" data-toggle="tooltip" data-placement="bottom" title="Call Us"> <i class="fa fa-phone"></i>
-                                  </a>
-                              </div>
-                              <div class="extra-cell">
-                                  <a href="mailto:info@hocomoco.in" data-toggle="tooltip" data-placement="bottom" title="Email"> <i class="fa fa-envelope"></i>
-                                  </a>
-                              </div>-->
-                </div>
-                <!-- ETRA Nav -->
-                <!-- MAIN Vav -->
-  
-                <div class="header-nav navbar-collapse collapse">
-                  <a href="index.html">
-                    <img src="/img/logo-light.png" alt="logo" class="logo-img" />
-                  </a>
-                  <ul class="nav navbar-nav">
-                    <!--<li class="active"><a href="">Home</a></li>-->
-                    <li class="active">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <!--<li><a href="javascript:;">Services</a>
-                                          <ul class="sub-menu has-child">
-                                                      <li><a href="residential-construction.html">
-                                                          <i class="fa fa-home"></i> Residential Construction
-                                                      </a></li>
-                                                      <li><a href="#"><i class="fa fa-building" aria-hidden="true"></i> Commercial Construction</a></li>
-                                                      <li><a href="#"><i class="fa fa-pencil-square" aria-hidden="true"></i> Project Management</a></li>
-                                                      <li><a href="#"><i class="fa fa-sitemap" aria-hidden="true"></i> Architecture Services</a></li>
-                                                      <li><a href="#"><i class="fa fa-houzz" aria-hidden="true"></i> Interiors & Smart Home</a></li>
-                                          </ul>
-                                      </li>-->
-                    <!--<li class=""><a href="https://www.wehouse.in/company/about_us">About us</a></li>-->
-                    <li class="submenu-toogle">
-                      <a href="javascript:;"
-                        >Services<span class="caret small_caret white"></span
-                      ></a>
-                      <ul class="sub-menu has-child">
-                        <li>
-                          <a
-                            href="residental.html"
-                          >
-                            <img
-                              alt="Service icon"
-                              src="https://www.wehouse.in/assets/icons/house.png"
-                            />
-                            Residential Construction
-                          </a>
-                        </li>
-  
-                        <li>
-                          <a
-                            href="commersial.html"
-                          >
-                            <img
-                              alt="Service icon"
-                              src="https://www.wehouse.in/assets/icons/building.png"
-                            />
-                            Commercial Construction
-                          </a>
-                        </li>
-  
-                        <li>
-                          <a
-                            href="project mmt.html"
-                          >
-                            <img
-                              alt="Service icon"
-                              src="https://www.wehouse.in/assets/icons/project1.png"
-                            />
-                            Project Management
-                          </a>
-                        </li>
-  
-                        <li>
-                          <a
-                            href="https://www.wehouse.in/service/architecture-structural"
-                          >
-                            <img
-                              alt="Service icon"
-                              src="https://www.wehouse.in/assets/icons/Architect.png"
-                            />
-                            Architecture & Structure
-                          </a>
-                        </li>
-  
-                        <li>
-                          <a
-                            href="interiour.html"
-                          >
-                            <img
-                              alt="Service icon"
-                              src="https://www.wehouse.in/assets/icons/interior.png"
-                            />
-                            Interiors & Smart Home
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="">
-                      <a href="https://www.wehouse.in/portfolio">Portfolio</a>
-                    </li>
-                    <li class="">
-                      <a href="careers.html"
-                        >Careers</a
-                      >
-                    </li>
-                    <li class="">
-                      <a href="aboutus.html"
-                        >About Us</a
-                      >
-                    </li>
-                    <li class="">
-                      <a href="contactus.html">Contact us</a>
-                    </li>
-                    <!-- <li><a href="javascript:;"><i class="fa fa-user"></i></a>
-                                          <ul class="sub-menu has-child">
-                                                      <li><a href="profile.html">Profile</a></li>
-                                                      <li><a href="#">Logout</a></li> 
-                                          </ul> 
-                                      </li> -->
-                  </ul>
-                </div>
-  
+              </div>
+              <button
+                data-target=".header-nav"
+                data-toggle="collapse"
+                type="button"
+                class="navbar-toggle collapsed second-button animated-icon2"
+              >
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <!-- MAIN Vav -->
+
+              <div class="header-nav navbar-collapse collapse">
+                <a href="index.html">
+                  <!-- <img src="/img/logo-light.png" alt="logo" class="logo-img" > -->
+
+                  <img src="img/logo-light.png" alt="logo" class="logo-img">
+                
+                </a>
+                <ul class="nav navbar-nav">
+                  <!--<li class="active"><a href="">Home</a></li>-->
+                  <li class="active">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <!--<li><a href="javascript:;">Services</a>
+                                        <ul class="sub-menu has-child">
+                                                    <li><a href="residential-construction.html">
+                                                        <i class="fa fa-home"></i> Residential Construction
+                                                    </a></li>
+                                                    <li><a href="#"><i class="fa fa-building" aria-hidden="true"></i> Commercial Construction</a></li>
+                                                    <li><a href="#"><i class="fa fa-pencil-square" aria-hidden="true"></i> Project Management</a></li>
+                                                    <li><a href="#"><i class="fa fa-sitemap" aria-hidden="true"></i> Architecture Services</a></li>
+                                                    <li><a href="#"><i class="fa fa-houzz" aria-hidden="true"></i> Interiors & Smart Home</a></li>
+                                        </ul>
+                                    </li>-->
+                  <!--<li class=""><a href="https://www.wehouse.in/company/about_us">About us</a></li>-->
+                  <li class="submenu-toogle">
+                    <a href="javascript:;"
+                      >Services<span class="caret small_caret white"></span
+                    ></a>
+                    <ul class="sub-menu has-child">
+                      <li>
+                        <a
+                          href="residental.html"
+                        >
+                          <img
+                            alt="Service icon"
+                            src="https://www.wehouse.in/assets/icons/house.png"
+                          />
+                          Residential Construction
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="commersial.html"
+                        >
+                          <img
+                            alt="Service icon"
+                            src="https://www.wehouse.in/assets/icons/building.png"
+                          />
+                          Commercial Construction
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="project mmt.html"
+                        >
+                          <img
+                            alt="Service icon"
+                            src="https://www.wehouse.in/assets/icons/project1.png"
+                          />
+                          Project Management
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="interiour.html"
+                        >
+                          <img
+                            alt="Service icon"
+                            src="https://www.wehouse.in/assets/icons/interior.png"
+                          />
+                          Interiors & Smart Home
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="">
+                    <a href="careers.html"
+                      >Careers</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="aboutus.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="contactus.html">Contact us</a>
+                  </li>
+                  <!-- <li><a href="javascript:;"><i class="fa fa-user"></i></a>
+                                        <ul class="sub-menu has-child">
+                                                    <li><a href="profile.html">Profile</a></li>
+                                                    <li><a href="#">Logout</a></li> 
+                                        </ul> 
+                                    </li> -->
+                </ul>
+              </div>
+
                 <script>
                   function DropDown(el) {
                     this.dd = el;
@@ -534,6 +509,7 @@ gtag('config', 'AW-767771084');
               </div>
             </div>
           </div>
+       
         </header>
 <!-- HEADER END -->       
 <!-- CONTENT START -->
@@ -600,14 +576,121 @@ gtag('config', 'AW-767771084');
                                 <li ><a data-filter=".cat-3" href="#" onclick="architecture()" data-hover="Architecture Service">Architecture Service</a></li>
 
                                 <li ><a data-filter=".cat-4" href="#" onclick="interior()" data-hover="Interior & Smart Home">Interior & Smart Home </a></li>
-
                                 <li ><a data-filter=".cat-5" href="#" onclick="project()" data-hover="Project Management">Project Management</a></li>
 
                         </ul>
 
                     </div>
 
-                    <!-- PAGINATION END -->    
+                    <!-- PAGINATION END --> 
+                    
+                   
+
+                    <div class="col-lg-12 col-ld-12">
+                      <div class="isotope popup-gallery popup-gallery column-4">
+                        <div class="grid-item masdies a1">
+                        <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/resi4.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                                <h3>Arka Towers</h3><div class="hr"></div>
+                           </div>
+                          </div>
+                         </div>
+                         </div>
+                         <div class="grid-item bmw a1">
+                          <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/resi5.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Sai Nilayam</h3><div class="hr"></div>
+                      </div></div>
+                         </div>
+                         </div>
+                         <div class="grid-item a3">
+                           <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/interiors4.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Ramana Residency</h3><div class="hr"></div>
+                      </div></div>
+                         </div>
+                         </div>
+                         <div class="grid-item a1">
+                           <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/resi1.png" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Durga Nilayam</h3><div class="hr"></div>
+                      </div></div>
+                         </div>         
+                         </div>
+                         <div class="grid-item a1">
+                           <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/resi3.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Rukmini Residency</h3><div class="hr"></div>
+                      </div></div>
+                         </div>         
+                         </div>
+                         <div class="grid-item a1">
+                           <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/resi2.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Surya Homes</h3><div class="hr"></div>
+                      </div></div>
+                         </div>         
+                         </div>
+                         <div class="grid-item a3">
+                           <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/interiors5.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Naidu Residency</h3><div class="hr"></div>
+                      </div></div>
+                         </div>          
+                         </div>
+                         <div class="grid-item a2">
+                          <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/commer1.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Epro Soft Tech</h3><div class="hr"></div>
+                      </div></div>
+                         </div>       
+                         </div>
+                       <div class="grid-item a2">
+                           <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/commer2.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Ample Softsol</h3><div class="hr"></div>
+                      </div></div>
+                         </div>        
+                         </div>
+                         <div class="grid-item a3">
+                           <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/interiors2.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Kowshika Nilayam</h3><div class="hr"></div>
+                      </div></div>
+                         </div>          
+                         </div>
+                         <div class="grid-item a3">
+                           <div class="project-info">
+                           <img class="img-responsive center-block" src="./img/interiors9.jpg" alt="">
+                           <div class="overlay">
+                               <div class="overlay-content">
+                             <h3>Orchard Residency</h3><div class="hr"></div>
+                      </div></div>
+                         </div>          
+                         </div>
+                        </div>
+                      </div>
+                   
                     <!-- GALLERY CONTENT START --> 
                      <div class="portfolio-wrap mfp-gallery work-grid row clearfix portfolio_Div" style="position: relative; height: 363px;">  
                         <!-- COLUMNS 1 -->
@@ -617,6 +700,7 @@ gtag('config', 'AW-767771084');
                                         </div> 
                                                                                     <div class="clearfix"></div>
                                          <div class="flex-center"> 
+                                          
 						<button class="btn site-button btn-effect" id="load_more" data-val = "0">View More</button>
 						
 					</div>  
@@ -694,7 +778,7 @@ gtag('config', 'AW-767771084');
                                     <li><a href="https://www.facebook.com/wehouse.homeconstruction" target="_blank" class="fa fa-facebook"></a></li>
                                     <li><a href="https://twitter.com/wehouse_in" target="_blank" class="fa fa-twitter"></a></li>
                                     <li><a href="https://instagram.com/wehouse.in" target="_blank" class="fa fa-instagram"></a></li>
-                                    <li><a href="https://www.linkedin.com/company/wehousehomeconstruction" target="_blank" class="fa fa-linkedin"></a></li>
+                                    <li><a href="#" target="_blank" class="fa fa-linkedin"></a></li>
                                 </ul>                                     
                             </div>
                         </div> 
@@ -705,13 +789,13 @@ gtag('config', 'AW-767771084');
                                 <h4 class="widget-title">Useful links</h4>
                                 <ul> 
                                     <!--<li><a href="https://www.wehouse.in/company/about-us">About Us</a></li>-->
-                                    <li><a href="https://www.wehouse.in/">Hyderabad</a></li>
-                                    <li><a href="https://www.wehouse.in/chennai">Chennai</a></li>
-                                    <li><a href="https://www.wehouse.in/emonitoring">E-Monitoring</a></li>
-                                    <li><a href="https://www.wehouse.in/become-a-professional">Become a Professional</a></li>
-                                    <li><a href="https://www.wehouse.in/blog">Blogs</a></li>
-                                    <li><a href="https://www.wehouse.in/contact-us">Contact Us</a></li>
-                                    <li><a href="https://www.wehouse.in/sitemap.html" target="_blank">Site Map</a></li>
+                                    <li><a href="#">Hyderabad</a></li>
+                                    <li><a href="#">Chennai</a></li>
+                                    <li><a href="#">E-Monitoring</a></li>
+                                    <li><a href="#">Become a Professional</a></li>
+                                    <li><a href="./blogs.html">Blogs</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#" target="_blank">Site Map</a></li>
                                 </ul>
                             </div>                           
                         </div>
@@ -721,11 +805,11 @@ gtag('config', 'AW-767771084');
                             <div class="widget widget_services inline-links">
                                 <h4 class="widget-title">Our Services</h4>
                                <ul>
-                                    <li><a href="https://www.wehouse.in/service/residential-construction">Residential Construction</a></li>
-                                     <li><a href="https://www.wehouse.in/service/commercial-construction">Commercial Construction</a></li> 
-                                    <li><a href="https://www.wehouse.in/service/home-renovation-and-repairs">Project Management</a></li>
-                                    <li><a href="https://www.wehouse.in/service/architecture-structural">Architecture Services</a></li>
-                                    <li><a href="https://www.wehouse.in/service/interior-designing">Interiors & Smart Home</a></li>
+                                    <li><a href="./residental.html">Residential Construction</a></li>
+                                     <li><a href="./commersial.html">Commercial Construction</a></li> 
+                                    <li><a href="./project mmt.html">Project Management</a></li>
+                                    <li><a href="./architecture.html">Architecture Services</a></li>
+                                    <li><a href="./interiour.html">Interiors & Smart Home</a></li>
                                 </ul>
                             </div>                           
                         </div>
