@@ -5178,7 +5178,7 @@ ol.list-num-count.list-outline-none > li:before {
 }
 
 .breadcrumb-style-2 li:after {
-  content: "\f101";
+  content: "";
   margin-left: 7px;
   font-family: FontAwesome;
   color: #fff;
