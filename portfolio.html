@@ -264,22 +264,10 @@ gtag('config', 'AW-767771084');
               </a>
               <ul class="nav navbar-nav">
                 <!--<li class="active"><a href="">Home</a></li>-->
-                <li class="active">
+                <li >
                   <a href="index.html">Home</a>
                 </li>
-                <!--<li><a href="javascript:;">Services</a>
-                                        <ul class="sub-menu has-child">
-                                                    <li><a href="residential-construction.html">
-                                                        <i class="fa fa-home"></i> Residential Construction
-                                                    </a></li>
-                                                    <li><a href="#"><i class="fa fa-building" aria-hidden="true"></i> Commercial Construction</a></li>
-                                                    <li><a href="#"><i class="fa fa-pencil-square" aria-hidden="true"></i> Project Management</a></li>
-                                                    <li><a href="#"><i class="fa fa-sitemap" aria-hidden="true"></i> Architecture Services</a></li>
-                                                    <li><a href="#"><i class="fa fa-houzz" aria-hidden="true"></i> Interiors & Smart Home</a></li>
-                                        </ul>
-                                    </li>-->
-                <!--<li class=""><a href="https://www.wehouse.in/company/about_us">About us</a></li>-->
-                <li class="submenu-toogle">
+                              <li class="submenu-toogle">
                   <a href="javascript:;">Services<span class="caret small_caret white"></span></a>
                   <ul class="sub-menu has-child">
                     <li>
@@ -311,7 +299,7 @@ gtag('config', 'AW-767771084');
                     </li>
                   </ul>
                 </li>
-                <li class="">
+                <li class="active">
                   <a href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="">
@@ -323,12 +311,7 @@ gtag('config', 'AW-767771084');
                 <li class="">
                   <a href="contactus.html">Contact us</a>
                 </li>
-                <!-- <li><a href="javascript:;"><i class="fa fa-user"></i></a>
-                                        <ul class="sub-menu has-child">
-                                                    <li><a href="profile.html">Profile</a></li>
-                                                    <li><a href="#">Logout</a></li> 
-                                        </ul> 
-                                    </li> -->
+               
               </ul>
             </div>
 
@@ -554,217 +537,273 @@ gtag('config', 'AW-767771084');
           </div>
           <div class="clearfix"></div>
           <!-- PAGINATION START -->
+         
           <div class="filter-wrap p-b30 text-center">
-
-            <ul class="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
-                <li class="active"><a data-filter=".cat-0" href="#" id="all" data-hover="All">All</a></li>
-                <li><a data-filter=".cat-1" href="#" data-hover="Residential Construction">Residential Construction</a></li>
-                <li><a data-filter=".cat-2" href="#" data-hover="Commercial Construction">Commercial Construction</a></li>
-                <li><a data-filter=".cat-3" href="#" data-hover="Architecture Service">Architecture Service</a></li>
-                <li><a data-filter=".cat-4" href="#" data-hover="Interior & Smart Home">Interior & Smart Home </a></li>
-                <li><a data-filter=".cat-5" href="#" data-hover="Project Management">Project Management</a></li>
+            <ul class="filter-navigation inline-navigation masonry-filter link-style text-uppercase">
+                <li class="active"><a data-filter=".cat-0" href="#" id="all" data-hover="All" onclick="filterByCategory('cat-0')">All</a></li>
+                <li><a data-filter=".cat-1" href="#" onclick="filterByCategory('cat-1')"
+                        data-hover="Residential Construction">Residential Construction</a></li>
+                <li><a data-filter=".cat-2" href="#" onclick="filterByCategory('cat-2')"
+                        data-hover="Commercial Construction">Commercial Construction</a></li>
+                <li><a data-filter=".cat-3" href="#" onclick="filterByCategory('cat-3')"
+                        data-hover="Architecture Service">Architecture Service</a></li>
+                <li><a data-filter=".cat-4" href="#" onclick="filterByCategory('cat-4')"
+                        data-hover="Interior & Smart Home">Interior & Smart Home </a></li>
+                <li><a data-filter=".cat-5" href="#" onclick="filterByCategory('cat-5')"
+                        data-hover="Project Management">Project Management</a></li>
             </ul>
-        
+        </div>
+        <div class="image-gallery">
+            <!-- Your images with corresponding categories -->
+            <div class="image cat-1 cat-0">
+
+                <div class="col-lg-4  col-md-4 col-sm-6" style="margin-bottom:30px;">
+                    <div class="new-portfolio"><a
+                            href="https://wehouse.in/project-details/hyderabad/manikonda/ts47"><img
+                                src="https://wehouse.in/assets/slider/manibal.jpg" alt=""></a>
+                        <div class="mt-post-info p-a15">
+                            <div class="mt-post-title">
+                                <h4 class="post-title"><a
+                                        href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">TS47</a>
+                                </h4>
+                                <h5><a href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">Manikonda,
+                                        Hyderabad</a></h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4" style="padding-right:0px;">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"><a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">7000
+                                                    sft </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 port-pad">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">G+2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">
+                                                    View More</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="image cat-2 cat-0">
+                <div class="col-lg-4  col-md-4 col-sm-6" style="margin-bottom:30px;">
+                    <div class="new-portfolio"><a
+                            href="https://wehouse.in/project-details/hyderabad/manikonda/ts47"><img
+                                src="https://wehouse.in/assets/slider/manibal.jpg" alt=""></a>
+                        <div class="mt-post-info p-a15">
+                            <div class="mt-post-title">
+                                <h4 class="post-title"><a
+                                        href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">TS47</a>
+                                </h4>
+                                <h5><a href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">Manikonda,
+                                        Hyderabad</a></h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4" style="padding-right:0px;">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"><a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">7000
+                                                    sft </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 port-pad">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">G+2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">
+                                                    View More</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image cat-3 cat-0">
+                <div class="col-lg-4  col-md-4 col-sm-6" style="margin-bottom:30px;">
+                    <div class="new-portfolio"><a
+                            href="https://wehouse.in/project-details/hyderabad/manikonda/ts47"><img
+                                src="https://wehouse.in/assets/slider/manibal.jpg" alt=""></a>
+                        <div class="mt-post-info p-a15">
+                            <div class="mt-post-title">
+                                <h4 class="post-title"><a
+                                        href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">TS47</a>
+                                </h4>
+                                <h5><a href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">Manikonda,
+                                        Hyderabad</a></h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4" style="padding-right:0px;">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"><a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">7000
+                                                    sft </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 port-pad">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">G+2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">
+                                                    View More</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image cat-4 cat-0">
+                <div class="col-lg-4  col-md-4 col-sm-6" style="margin-bottom:30px;">
+                    <div class="new-portfolio"><a
+                            href="https://wehouse.in/project-details/hyderabad/manikonda/ts47"><img
+                                src="https://wehouse.in/assets/slider/manibal.jpg" alt=""></a>
+                        <div class="mt-post-info p-a15">
+                            <div class="mt-post-title">
+                                <h4 class="post-title"><a
+                                        href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">TS47</a>
+                                </h4>
+                                <h5><a href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">Manikonda,
+                                        Hyderabad</a></h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4" style="padding-right:0px;">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"><a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">7000
+                                                    sft </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 port-pad">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">G+2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">
+                                                    View More</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image cat-5 cat-0">
+                <div class="col-lg-4  col-md-4 col-sm-6" style="margin-bottom:30px;">
+                    <div class="new-portfolio"><a
+                            href="https://wehouse.in/project-details/hyderabad/manikonda/ts47"><img
+                                src="https://wehouse.in/assets/slider/manibal.jpg" alt=""></a>
+                        <div class="mt-post-info p-a15">
+                            <div class="mt-post-title">
+                                <h4 class="post-title"><a
+                                        href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">TS47</a>
+                                </h4>
+                                <h5><a href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">Manikonda,
+                                        Hyderabad</a></h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4" style="padding-right:0px;">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"><a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">7000
+                                                    sft </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 port-pad">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">G+2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="mt-post-meta">
+                                        <ul>
+                                            <li class="post-date"> <a
+                                                    href="https://wehouse.in/project-details/hyderabad/manikonda/ts47">
+                                                    View More</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more images as needed -->
         </div>
 
-          <!-- PAGINATION END -->
-
-
-
-          <div class="col-lg-12 col-ld-12">
-            <div class="isotope popup-gallery popup-gallery column-4">
-              <div class="grid-item masdies a1" >
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/resi4.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Arka Towers</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item bmw cat-5  a1">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/resi5.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Sai Nilayam</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item a3 cat-5">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/interiors4.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Ramana Residency</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item a1 cat-4">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/resi1.png" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Durga Nilayam</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item a1 cat-4">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/resi3.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Rukmini Residency</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item a1 cat-4 ">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/resi2.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Surya Homes</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item a3 cat-2">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/interiors5.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Naidu Residency</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item a2 cat-2">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/commer1.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Epro Soft Tech</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item a2 cat-2">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/commer2.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Ample Softsol</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item a3 cat-1">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/interiors2.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Kowshika Nilayam</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item a3 cat-1">
-                <div class="project-info">
-                  <img class="img-responsive center-block" src="./img/interiors9.jpg" alt="">
-                  <div class="overlay">
-                    <div class="overlay-content">
-                      <h3>Orchard Residency</h3>
-                      <div class="hr"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- GALLERY CONTENT START -->
-          <!-- <div class="portfolio-wrap mfp-gallery work-grid row clearfix portfolio_Div"
-            style="position: relative; height: 363px;">
-        
-            <div class="masonry-item cat-0 port_area">
-
-              <div id="ajax_table">
-              </div>
-              <div class="clearfix"></div>
-              <div class="flex-center">
-
-                <button class="btn site-button btn-effect" id="load_more" data-val="0">View More</button>
-
-              </div>
-            </div>
-            <div class="masonry-item cat-1  port_area">
-              <div id="ajax_table_res">
-              </div>
-
-              <div class="clearfix"></div>
-              <div class="flex-center">
-                <button class="btn site-button btn-effect" id="load_more1" data-val="0">View More</button>
-              </div>
-            </div>
-            <div class="masonry-item cat-2 port_area" style="position:relative !important">
-              <div id="ajax_table_com">
-              </div>
-              <div class="clearfix"></div>
-              <div class="flex-center">
-                <button class="btn site-button btn-effect" id="load_more2" data-val="0" style="visibility:hidden">View
-                  More</button>
-              </div>
-            </div>
-            <div class="masonry-item cat-3 port_area">
-              <div id="ajax_table_arc">
-              </div>
-              <div class="clearfix"></div>
-              <div class="flex-center">
-                <button class="btn site-button btn-effect" id="load_more3" data-val="0" style="visibility:hidden">View
-                  More</button>
-              </div>
-            </div>
-            <div class="masonry-item cat-4 port_area">
-              <div id="ajax_table_int">
-              </div>
-              <div class="clearfix"></div>
-              <div class="flex-center">
-                <button class="btn site-button btn-effect" id="load_more4" data-val="0">View More</button>
-              </div>
-            </div>
-            <div class="masonry-item cat-5 port_area">
-              <div id="ajax_table_pro">
-              </div>
-              <div class="clearfix"></div>
-              <div class="flex-center">
-
-                <button class="btn site-button btn-effect" id="load_more5" data-val="0" style="visibility:hidden">View
-                  More</button>
-
-              </div>
-            </div>
-          </div> -->
-
-          <!-- SECTION CONTENT END  -->
-          <div class="clearfix"></div>
-
         </div>
+        <script>
+          function filterByCategory(category) {
+              // Hide all images
+              document.querySelectorAll('.image').forEach(function (image) {
+                  image.style.display = 'none';
+              });
 
+              // Show images with the selected category
+              document.querySelectorAll('.' + category).forEach(function (image) {
+                  image.style.display = 'block';
+              });
+          }
+      </script>
         <!-- CONTENT END -->
         <style>
           .filter-wrap {
