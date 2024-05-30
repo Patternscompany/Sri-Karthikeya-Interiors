@@ -230,35 +230,7 @@ gtag('config', 'AW-767771084');
     <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Organization",
-        "@id": "#Organization",
-        "url": "https://www.wehouse.in",
-        "legalName": "Timeshell Civil Projects E-Monitoring Consultancy Private Limited",
-        "name": "Wehouse",
-        "description": "Wehouse is home construction and e-monitoring service company. Get best home construction & budget-friendly service.",
-        "image": "https://www.wehouse.in/new-assets/assets/formerly-hocomocologo.png",
-        "logo": "https://www.wehouse.in/new-assets/assets/wehouse_logo.png",
-        "telephone": "6305504248",
-        "email": "info@wehouse.in",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "8-2-293/82/1/238, A/C, Road No 12, MLA Colony",
-          "addressLocality": "Banjara Hills",
-          "addressRegion": "Hyderabad",
-          "addressCountry": "India",
-          "postalCode": "500 034"
-        },
-        "sameAs": [
-          "https://www.facebook.com/wehouse.homeconstruction",
-          "https://www.instagram.com/wehouse.in/",
-          "https://www.linkedin.com/company/wehousehomeconstruction/",
-          "https://twitter.com/wehouse_in"
-        ]
-      }
-    </script>
+    
   </head>
 
   <body>
@@ -270,10 +242,10 @@ gtag('config', 'AW-767771084');
           <div class="main-bar">
             <div class="container">
               <div class="logo-header d-block d-lg-none">
-                <div class="logo-header-inner logo-header-one">
-                  <!-- <a href="index.html">
+                <div class="logo-header-inner logo-header-one mobile">
+                  <a href="index.html">
                     <img src="/img/logo-light.png" alt="Wehouse Logo" class="w-100"/>
-                  </a> -->
+                  </a>
                 </div>
               </div>
               <button
@@ -291,8 +263,8 @@ gtag('config', 'AW-767771084');
               <!-- MAIN Vav -->
         
 
-              <div class="header-nav navbar-collapse collapse">
-                <a href="index.html">
+              <div class="header-nav navbar-collapse collapse ">
+                <a href="index.html" class="desktop">
                   <img src="img/logo-light.png" alt="logo" class="logo-img" />
                   
                 </a>
@@ -561,6 +533,21 @@ gtag('config', 'AW-767771084');
         </div>
       </header>
       <!-- HEADER END -->
+
+      <style>
+        .mobile{
+          display: none;
+        }
+       
+        @media(max-width:992px){
+.mobile{
+  display: block;
+}
+.desktop{
+          display: none;
+        }
+        }
+      </style>
       <!-- CONTENT START -->
       <div class="page-content">
         <!--Fade SLIDER Start -->
@@ -577,7 +564,7 @@ gtag('config', 'AW-767771084');
 
               <img
                 class="onlydesktop hidden-xs"
-                src="./img/output_image.jpeg"
+                src="./img/img2.jpg"
                 alt="..."
               />
               
@@ -626,7 +613,7 @@ gtag('config', 'AW-767771084');
                   </div> -->
                 </div>
                 <!--<div class="mobilevisibletext"><h5>All Your Construction Needs Under One Roof</h5></div> -->
-                <div class="banner-leadform">
+                <div class="banner-leadform hidden-xs">
                   <!-- <img
                     src="https://www.wehouse.in/new-assets/assets/formerly-hocomocologo.png"
                     alt=""
@@ -953,7 +940,7 @@ gtag('config', 'AW-767771084');
     </div>
     <!-- OUR All SERVICES END -->
     <!-- ABOUT COMPANY START -->
-    <!-- <div class="owl-carousel about-home">
+    <div class="owl-carousel about-home">
         <div class="item ">
             <div class="mt-img-effect zoom-slow">
                 <a href="javascript:void(0);">
@@ -961,7 +948,7 @@ gtag('config', 'AW-767771084');
                 </a>
             </div>
         </div>
-    </div>-->
+    </div>
     <!-- <div class="section-full mobile-page-padding p-tb50 overlay-wraper bg-cover bg-center" style="background-image:url(new-assets/images/background/bg-1.jpg)">
               <div class="overlay-main bg-black opacity-06"></div>
                 <div class="container">
