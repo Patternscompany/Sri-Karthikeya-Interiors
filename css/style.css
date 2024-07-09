@@ -16271,20 +16271,24 @@ r .center-image {
 .banner_heading {
   color: #333333;
   text-transform: capitalize;
-  font-size: 24px;
+  font-size: 50px;
   background-color: transparent;
   padding: 0px 0px;
   letter-spacing: 1px;
   position: relative;
   margin-top: 10%;
-  line-height: 37px;
+  line-height: 80px;
   float: left;
   text-align: left;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 18px;
 }
+.ban-title{
+  font-size: 80px;
+}
 .banner_heading span {
-  color: #f8a504;
+  color: #fff;
+  font-weight: bold;
 }
 .carousel-caption-div h5 {
   color: #212121;
@@ -16357,4 +16361,16 @@ r .center-image {
 }
 .nandini {
   list-style-type: none !important;
+}
+.anil{
+  text: size 50px;
+}
+.sasi{
+  text:size 25px;
+}
+.kiran{
+  text:size 10px;
+}
+.welcome-first{
+  font-size: 70px !important;
 }
