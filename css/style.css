@@ -16367,12 +16367,16 @@ r .center-image {
   .mobile_heading{
    
     font-size: 15px;
-    font-weight: 600;
-    /* color: #f8a504 !important; */
+    font-weight: 800;
+   
     margin: 0%;
     padding: 0%;
     line-height: 2; 
+  
   }
+  .banner_heading{
+    color: #f8a504 !important;
+}
 
 }
 /* .anil{
