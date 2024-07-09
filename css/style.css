@@ -16362,7 +16362,6 @@ r .center-image {
 .nandini {
   list-style-type: none !important;
 }
-<<<<<<< HEAD
 
 @media(max-width:992px){
   .mobile_heading{
@@ -16370,11 +16369,13 @@ r .center-image {
     font-size: 15px;
     font-weight: 600;
     /* color: #f8a504 !important; */
+    margin: 0%;
+    padding: 0%;
+    line-height: 2; 
   }
 
 }
-=======
-.anil{
+/* .anil{
   text: size 50px;
 }
 .sasi{
@@ -16385,5 +16386,4 @@ r .center-image {
 }
 .welcome-first{
   font-size: 70px !important;
-}
->>>>>>> eea967509d0be4379b515121f4167aceefdf28b0
+} */
