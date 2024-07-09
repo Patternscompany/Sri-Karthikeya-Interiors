@@ -16368,14 +16368,24 @@ r .center-image {
    
     font-size: 15px;
     font-weight: 800;
-   
     margin: 0%;
     padding: 0%;
     line-height: 2; 
+    margin-top: 35px;
   
   }
   .banner_heading{
     color: #f8a504 !important;
+    
+}
+.needs-text h2{
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.text-style{
+  margin-top: 30px;
+  line-height: 1.5;
 }
 
 }
