@@ -16358,3 +16358,13 @@ r .center-image {
 .nandini {
   list-style-type: none !important;
 }
+
+@media(max-width:992px){
+  .mobile_heading{
+   
+    font-size: 15px;
+    font-weight: 600;
+    /* color: #f8a504 !important; */
+  }
+
+}
