@@ -13685,6 +13685,11 @@ ol.commentlist li::after {
 .how-works {
   width: 20%;
 }
+@media(max-width:992px){
+  .how-works{
+    width: 100% !important;
+  }
+}
 
 .how-works h4 {
   font-weight: 500;
