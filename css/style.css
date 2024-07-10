@@ -16393,6 +16393,14 @@ r .center-image {
 .social-icons-mobile{
   margin-top: 70px;
 }
+.logo-header-inner img{
+  width: 100px;
+  height: 50px;
+}
+.mobile-view{
+  margin-top: 60px;
+}
+
 
 }
 /* .anil{
