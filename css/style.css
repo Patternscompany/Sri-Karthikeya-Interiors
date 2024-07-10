@@ -6866,6 +6866,7 @@ recent-posts-entry-date .mt-post-info .post-title {
 .site-header {
   position: relative;
   z-index: 999;
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -14254,6 +14255,7 @@ input[type="radio"] {
   left: 0;
   position: fixed;
   top: 46%;
+  z-index: 999;
 }
 
 #social-sidebar li {
@@ -16283,7 +16285,7 @@ r .center-image {
   font-weight: bold;
   margin-bottom: 18px;
 }
-.ban-title{
+.ban-title {
   font-size: 80px;
 }
 .banner_heading span {
@@ -16363,45 +16365,40 @@ r .center-image {
   list-style-type: none !important;
 }
 
-@media(max-width:992px){
-  .mobile_heading{
-   
+@media (max-width: 992px) {
+  .mobile_heading {
     font-size: 15px;
     font-weight: 800;
     margin: 0%;
     padding: 0%;
-    line-height: 2; 
+    line-height: 2;
     margin-top: 35px;
-  
   }
-  .banner_heading{
+  .banner_heading {
     color: #f8a504 !important;
-    
-}
-.needs-text h2{
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 700;
-}
-.text-style{
-  margin-top: 30px;
-  line-height: 1.5;
-}
-.quote-img-mobile{
-  margin-top: 50px;
-}
-.social-icons-mobile{
-  margin-top: 70px;
-}
-.logo-header-inner img{
-  width: 100px;
-  height: 50px;
-}
-.mobile-view{
-  margin-top: 60px;
-}
-
-
+  }
+  .needs-text h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  .text-style {
+    margin-top: 30px;
+    line-height: 1.5;
+  }
+  .quote-img-mobile {
+    margin-top: 50px;
+  }
+  .social-icons-mobile {
+    margin-top: 70px;
+  }
+  .logo-header-inner img {
+    width: 100px;
+    height: 50px;
+  }
+  .mobile-view {
+    margin-top: 60px;
+  }
 }
 /* .anil{
   text: size 50px;
@@ -16415,3 +16412,15 @@ r .center-image {
 .welcome-first{
   font-size: 70px !important;
 } */
+.mobile{
+  display: none;
+}
+
+@media(max-width:992px){
+.mobile{
+display: block;
+}
+.desktop{
+  display: none;
+}
+}
