@@ -12882,7 +12882,13 @@ ol.commentlist li::after {
   -o-transition: all 1s linear;
   transition: all 1s linear;
 }
-
+.icon{
+  width: 50px;
+  height: 50px;
+}
+.flaticon-city:before {
+    content: "\f109";
+}
 .image-effect-one i.link-plus:after {
   left: 50%;
   top: 50%;
@@ -15596,6 +15602,7 @@ r .center-image {
   font-size: 45px;
   color: #f8a504;
   text-align: center;
+  opacity: 1;
 }
 
 .services_btn .site-button.btn-effect:after,
