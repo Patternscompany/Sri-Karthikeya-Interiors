@@ -13773,6 +13773,12 @@ ol.commentlist li::after {
   top: 27%;
   left: -6.5px;
   width: 35px;
+  z-index: 999;
+}
+@media (max-width:992px){
+  .quote-img{
+    display: none;
+  }
 }
 .quote-txt {
   color: transparent;
@@ -14245,6 +14251,11 @@ input[type="radio"] {
   position: fixed;
   top: 46%;
   z-index: 999;
+}
+@media (max-width:992px){
+  #social-sidebar{
+    display: none;
+  }
 }
 
 #social-sidebar li {
