@@ -5504,6 +5504,10 @@ input[type="radio"]:checked + label:before {
   margin-bottom: 20px;
 }
 
+.widget-address{
+  list-style-type: none;
+}
+
 .recent-posts-entry ul {
   margin: 0;
   list-style: none;
@@ -9198,6 +9202,8 @@ button.scroltop span {
 .page-wraper {
   background: #fff;
 }
+
+
 
 .page-content {
   position: relative;
