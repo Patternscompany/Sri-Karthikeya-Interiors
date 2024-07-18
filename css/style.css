@@ -16450,4 +16450,7 @@ display: block;
     list-style: none;
     margin-bottom: 5px;
   }
+  .mobile-footer{
+    width: 50%;
+  }
 }
