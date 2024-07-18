@@ -16279,7 +16279,7 @@ r .center-image {
   padding: 0px 0px;
   letter-spacing: 1px;
   position: relative;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   line-height: 80px;
   float: left;
   text-align: left;
@@ -16365,7 +16365,9 @@ r .center-image {
 .nandini {
   list-style-type: none !important;
 }
-
+.banner_heading {
+  color: #f8a504 !important;
+}
 @media (max-width: 992px) {
   .mobile_heading {
     font-size: 15px;
