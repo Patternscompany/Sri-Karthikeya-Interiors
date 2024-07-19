@@ -13774,11 +13774,7 @@ ol.commentlist li::after {
   left: -6.5px;
   width: 35px;
   z-index: 999;
-}
-@media (max-width:992px){
-  .quote-img{
-    display: none;
-  }
+  display: none;
 }
 .quote-txt {
   color: transparent;
