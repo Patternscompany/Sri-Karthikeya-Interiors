@@ -321,7 +321,7 @@
         <div class="carousel-inner" data-wow-delay="0.3s" role="listbox">
           <div class="item active">
 
-            <img class="onlydesktop mobile-view" src="./img/img2.jpg" alt="..." />
+            <img class="onlydesktop mobile-view" src="img/img2.jpg" alt="..." />
 
 
             <div class="container">
@@ -341,7 +341,7 @@
                   <span>Book a free Consultation</span><span class="fold bottom right"></span><span
                     class="fold bottom left"></span>
                 </div>
-                <form name="bannerform" id="bannerform" method="POST" autocomplete="off">
+                <form name="bannerform" id="bannerform" method="POST" autocomplete="on">
                   <div class="row">
                     <div class="form-group consult">
                       <label class="control-label">Name</label>
@@ -994,12 +994,12 @@
           </div>
         </div>
       </div>
-      <div class="row read-more-less" data-id="0">
+      <!-- <div class="row read-more-less" data-id="0">
         <div class="col-sm-12 read-toggle readmore_sec" data-id="0">
           <div class="col-md-12">
-            <!-- <span class="readmore_dsn">
+            <span class="readmore_dsn">
               <i class="fa-solid fa-angle-down"></i>
-            </span> -->
+            </span>
             <aside class="readmore-text">
               <p class="text-left font-light">
                 Residential Construction: Complete end to end construction
@@ -1133,7 +1133,7 @@
             </aside>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -1181,7 +1181,7 @@
                   <div class="mt-post-readmore pull-left">
                     <a href="blogs.html" title="Read More" rel="bookmark" class="site-button-link">Read More
 
-                      <i class="fa-solid fa-angle-down"></i></a>
+                      <i class="fa fa-arrow-circle-o-right arrow-animation"></i></a>
                   </div>
                 </div>
               </div>
@@ -1666,413 +1666,22 @@
 
   <script src="js/switcher.js"></script>
 
-  <!-- SWITCHER FUCTIONS  -->
 
-  <!-- REVOLUTION JS FILES -->
-
-  <!--<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>-->
-
-  <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-
-  <!--<script src="plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>-->
-
-  <!-- REVOLUTION SLIDER SCRIPT FILES -->
-
-  <!--<script src="js/rev-script-2.js"></script>-->
 
   <script src="js/prefixfree.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
     new WOW.init();
-    $(function () {
-      var dateToday = new Date();
-      $("#datepicker")
-        .datepicker({
-          autoclose: true,
-          todayHighlight: true,
-          format: "dd.mm.yyyy",
-          startDate: dateToday,
-        })
-        .datepicker("update", new Date());
-
-      $("#datepicker1")
-        .datepicker({
-          autoclose: true,
-          todayHighlight: true,
-          format: "dd.mm.yyyy",
-          startDate: dateToday,
-        })
-        .datepicker("update", new Date());
-    });
   </script>
   <script src="js/bootstrap-multiselect.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#depts").multiselect({
-        numberDisplayed: 1,
-        required: true,
-
-        includeSelectAllOption: true,
-
-        allSelectedText: "All Topics selected",
-
-        nonSelectedText: "No Topics selected",
-
-        selectAllValue: "all",
-
-        selectAllText: "Select all",
-
-        unselectAllText: "Unselect all",
-
-        onSelectAll: function (checked) {
-          var all = $(
-            "#depts ~ .btn-group .dropdown-menu .multiselect-all .checkbox"
-          );
-
-          all
-
-            // get all child nodes including text and comment
-
-            .contents()
-
-            // iterate and filter out elements
-
-            .filter(function () {
-              // check node is text and non-empty
-
-              return this.nodeType === 3 && this.textContent.trim().length;
-
-              // replace it with new text
-            })
-            .replaceWith(checked ? this.unselectAllText : this.selectAllText);
-        },
-
-        onChange: function () {
-          var select = $(this.$select[0]);
-
-          var dropdown = $(this.$ul[0]);
-
-          var options = select.find("option").length;
-
-          var selected = select.find("option:selected").length;
-
-          var all = dropdown.find(".multiselect-all .checkbox");
-
-          all
-
-            // get all child nodes including text and comment
-
-            .contents()
-
-            // iterate and filter out elements
-
-            .filter(function () {
-              // check node is text and non-empty
-
-              return this.nodeType === 3 && this.textContent.trim().length;
-
-              // replace it with new text
-            })
-            .replaceWith(
-              options === selected
-                ? this.options.unselectAllText
-                : this.options.selectAllText
-            );
-        },
-      });
-
-      $("#form").submit(function (e) {
-        e.preventDefault();
-
-        alert($(this).serialize());
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".multiselect-container").append(
-        "<button type='button' class='theme-btn-small dropdown-btn m-l-10'>OK</button>"
-      );
-      //$(".dropdown-btn").hide();
-      //alert("Hello");
-      if ($("#depts").is(":checked")) {
-        alert("World");
-      }
-      $("#depts").click(function () {
-        $(".dropdown-btn").show();
-      });
-    });
-  </script>
-  <script>
-    (function ($) {
-      "use strict";
-
-      var sdm = function () {
-        var o = this;
-
-        $(document).ready(function () {
-          o.initialize();
-        });
-      };
-
-      var p = sdm.prototype;
-
-      p.initialize = function () {
-        this._initChartWizard();
-      };
-
-      p._initChartWizard = function () {
-        var o = this;
-
-        $("#chartwizard").bootstrapWizard({
-          onTabShow: function (tab, navigation, index) {
-            o._handleTabShow(tab, navigation, index, $("#chartwizard"));
-
-            o._nextTab(o);
-          },
-        });
-
-        $("#chartwizard").bootstrapWizard({ nextSelector: ".chartOption" });
-      };
-
-      p._handleTabShow = function (tab, navigation, index, wizard) {
-        var total = navigation.find("li").length;
-
-        var current = index + 0;
-
-        var percent = (current / (total - 1)) * 100;
-
-        var percentWidth = 100 - 100 / total + "%";
-
-        navigation.find("li").removeClass("done");
-
-        navigation.find("li.active").prevAll().addClass("done");
-
-        wizard.find(".progress-bar").css({ width: percent + "%" });
-
-        $(".form-wizard-horizontal")
-          .find(".progress")
-          .css({ width: percentWidth });
-      };
-
-      p._nextTab = function (wizard) {
-        $(".nextT").click(function () {
-          wizard("next");
-        });
-      };
-
-      window.boostbox = window.boostbox || {};
-
-      window.boostbox.sdm = new sdm();
-    })(jQuery);
-  </script>
   <script>
     $(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
 
-  <script>
-    $("#bannersubmit").click(function () {
-      var selValue = $("input[name='residence']:checked").val();
-      if (typeof $("input[name='residence']:checked").val() === "undefined") {
-        $(".errorres").css("display", "inline");
-      } else {
-        $(".errorres").css("display", "none");
-      }
-    });
 
-    $("#bannersubmit").click(function () {
-      var name = $("#name").val();
-      if (name == "") {
-        $("#name").focus();
-        $(".errorname").css("display", "inline");
-      } else {
-        $(".errorname").css("display", "none");
-      }
-      $("#name").keyup(function () {
-        $(".errorname").css("display", "none");
-      });
-
-      var comemail = $("#email").val();
-      // alert(comemail);
-      if (comemail == "" || IsEmail(comemail) == false) {
-        $("#email").focus();
-        $(".erroremail").css("display", "inline");
-      } else {
-        $(".erroremail").css("display", "none");
-      }
-      $("#email").keyup(function () {
-        $(".erroremail").css("display", "none");
-      });
-      //var concontact = $('#contact').val();
-      var conlen = $("#phone").val().length;
-      var value = $("[name=residence]:checked").val();
-      //alert(value);
-      if (value == "International") {
-        if (conlen >= 11) {
-          $(".errorphone1").css("display", "none");
-          return true;
-        } else {
-          $(".errorphone1").css("display", "inline");
-          $(".errorphone").css("display", "none");
-          return false;
-        }
-      } else {
-        // alert(value);
-        if (conlen == 10) {
-          $(".errorphone").css("display", "none");
-          return true;
-        } else {
-          $(".errorphone").css("display", "inline");
-          $(".errorphone1").css("display", "none");
-          return false;
-        }
-      }
-      function IsEmail(email) {
-        var regex =
-          /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if (!regex.test(email)) {
-          return false;
-        } else {
-          return true;
-        }
-      }
-    });
-    $("#bannerform").on("click", function () {
-      var value = $("[name=residence]:checked").val();
-      //alert(value);
-
-      if (value == "International") {
-        $("#phone").attr("maxlength", 13);
-      }
-      if (value == "India") {
-        $("#phone").attr("maxlength", 10);
-      }
-    });
-    function isNumberKey(evt) {
-      var charCode = evt.which ? evt.which : event.keyCode;
-      console.log(charCode);
-      if (charCode != 43 && charCode > 31 && (charCode < 48 || charCode > 57))
-        return false;
-
-      return true;
-    }
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("#submit").click(function () {
-        //  var keyCode = e.which ? e.which : e.keyCode
-        var namee = $("#namee").val();
-        if (namee == "") {
-          $("#namee").focus();
-          $(".errornamee").css("display", "inline");
-        } else {
-          $(".errornamee").css("display", "none");
-        }
-        $("#namee").keyup(function () {
-          $(".errornamee").css("display", "none");
-        });
-
-        //  var keyCode = e.which ? e.which : e.keyCode
-        var messagee = $("#messagee").val();
-        if (messagee == "") {
-          $("#messagee").focus();
-          $(".errormessagee").css("display", "inline");
-        } else {
-          $(".errormessagee").css("display", "none");
-        }
-        $("#messagee").keyup(function () {
-          $(".errormessagee").css("display", "none");
-        });
-
-        var emaile = $("#emaile").val();
-        //var name = $('#name').val();
-        if (emaile == "" || IsEmail(emaile) == false) {
-          $("#emaile").focus();
-          $(".erroremaile").css("display", "inline");
-        } else {
-          $(".erroremaile").css("display", "none");
-        }
-
-        var contacte = $("#phonee").val();
-        var lene = $("#phonee").val().length;
-        // alert(value) exit;
-        var valuee = $("[name=residence]:checked").val();
-        //alert(value);
-        if (valuee == "International") {
-          if (lene >= 11) {
-            //  alert("hello");
-            $(".errorphonee1").css("display", "none");
-
-            return true;
-          } else {
-            $(".errorphonee1").css("display", "inline");
-            $(".errorphonee").css("display", "none");
-            return false;
-          }
-        } else {
-          if (lene == 10) {
-            //  alert("hello");
-            $(".errorphonee").css("display", "none");
-            return true;
-          } else {
-            $(".errorphonee").css("display", "inline");
-            $(".errorphonee1").css("display", "none");
-            return false;
-          }
-        }
-      });
-
-      $("#myformquote").on("click", function () {
-        var valuee = $("[name=residence]:checked").val();
-        //alert(valuee);
-        if (typeof valuee == "undefined") {
-          $("#phonee").attr("maxlength", 10);
-        }
-        if (valuee == "International") {
-          $("#phonee").attr("maxlength", 13);
-        }
-        if (valuee == "India") {
-          $("#phonee").attr("maxlength", 10);
-        }
-      });
-
-      $(".only-numeric10").bind("keypress", function (e) {
-        var keyCode = e.which ? e.which : e.keyCode;
-
-        if (!(keyCode >= 48 && keyCode <= 57)) {
-          $(".errorphonee").css("display", "inline");
-          return false;
-        } else {
-          $(".errorphonee").css("display", "none");
-        }
-      });
-
-      function IsEmail(email) {
-        var regex =
-          /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if (!regex.test(email)) {
-          return false;
-        } else {
-          return true;
-        }
-      }
-    });
-  </script>
-
-  <script></script>
-
-  <script>
-    $(document).ready(function () {
-      var value = "1549";
-      if (value == "") {
-        $("#myModal8").modal("show");
-      }
-    });
-  </script>
 </body>
 
 </html>

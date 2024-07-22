@@ -6870,7 +6870,7 @@ recent-posts-entry-date .mt-post-info .post-title {
 .site-header {
   position: relative;
   z-index: 999;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 @media only screen and (max-width: 1200px) {
