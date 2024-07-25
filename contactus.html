@@ -714,46 +714,6 @@ gtag('config', 'AW-767771084');
     });
   </script>
   <!-- BOOTSTRAP.MIN JS -->
-  <script>
-    $(document).ready(function () {
-      var contentArray = [];
-      var index = "";
-      var clickedIndex = "";
-      var minimumLength = $('.read-more-less').attr('data-id');
-      var initialContentLength = [];
-      var initialContent = [];
-      var readMore = "<br/><span class='read-more'><span class='glyphicon glyphicon-plus-sign'></span>Read More</span>";
-      var readLess = "<br/><span class='read-less'><span class='glyphicon glyphicon-minus-sign'></span>Read Less</span>";
-      $('.read-toggle').each(function () {
-        index = $(this).attr('data-id');
-        contentArray[index] = $(this).html();
-        initialContentLength[index] = $(this).html().length;
-        if (initialContentLength[index] > minimumLength) {
-          initialContent[index] = $(this).html().substr(0, minimumLength);
-        } else {
-          initialContent[index] = $(this).html();
-        }
-        $(this).html(initialContent[index] + readMore);
-        //console.log(initialContent[0]);  
-
-
-      });
-      $(document).on('click', '.read-more', function () {
-        $(this).fadeOut(500, function () {
-          clickedIndex = $(this).parents('.read-toggle').attr('data-id');
-          $(this).parents('.read-toggle').html(contentArray[clickedIndex] + readLess);
-        });
-      });
-      $(document).on('click', '.read-less', function () {
-        $(this).fadeOut(500, function () {
-          clickedIndex = $(this).parents('.read-toggle').attr('data-id');
-          $(this).parents('.read-toggle').html(initialContent[clickedIndex] + readMore);
-        });
-      });
-    });
-
-  </script>
-
   <script src="js/wizard.js"></script>
 
   <!-- wizard JS -->
@@ -788,7 +748,8 @@ gtag('config', 'AW-767771084');
 
   <!-- PARALLAX BG IMAGE   -->
 
-  <script src="js/custom.js"></script>
+  <!-- <script src="js/custom.js"></script> -->
+  <script src="js/custom.min.js"></script>
 
   <!-- CUSTOM FUCTIONS  -->
 
