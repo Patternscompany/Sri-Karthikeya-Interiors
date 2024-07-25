@@ -13970,7 +13970,7 @@ ol.commentlist li::after {
 .mt-bnr-inr1 {
   height: 336px;
   background-size: cover;
-  background-position: center center;
+  /* background-position: center center; */
   display: table;
   width: 100%;
 }
@@ -16471,3 +16471,16 @@ display: block;
     width: 50%;
   }
 }
+
+
+/* @media only screen and (max-width: 1200px) {
+  .site-header .container {
+      width: auto;
+  }
+} */
+
+/* @media(max-width: 992px){
+  .mobileview{
+    margin-top: 60px;
+  }
+} */

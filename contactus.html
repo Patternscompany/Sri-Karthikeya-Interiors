@@ -128,230 +128,257 @@ gtag('config', 'AW-767771084');
 
 <body>
       <!-- HEADER START -->
-      <header class="site-header header-style-1">
-        <div class="sticky-header main-bar-wraper">
-          <div class="main-bar">
-            <div class="container">
-              <div class="logo-header mobile  ">
-                <div class="logo-header-inner logo-header-one">
-                  <a href="index.html">
-                    <img src="img/logo-light.png" alt="Logo" class="w-100" />
-                  </a>
+      <div class="page-wraper">
+        <header class="site-header header-style-1">
+          <div class="sticky-header main-bar-wraper">
+            <div class="main-bar">
+              <div class="container">
+                <div class="logo-header d-block d-lg-none">
+                  <div class="logo-header-inner logo-header-one mobile">
+                    <a href="index.html">
+                      <img src="img/logo-light.png" alt="Logo" class="w-100" />
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <button data-target=".header-nav" data-toggle="collapse" type="button"
-                class="navbar-toggle collapsed second-button animated-icon2">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-  
-              <!-- MAIN Vav -->
-  
-              <div class="header-nav navbar-collapse collapse">
-                <a href="index.html" class="desktop">
-                  <img src="img/logo-light.png" alt="logo" class="logo-img desktop">
-                </a>
-                <ul class="nav navbar-nav">
-                  <li class="">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li class="submenu-toogle">
-                    <a href="javascript:;">Services<span class="caret small_caret white"></span></a>
-                    <ul class="sub-menu has-child">
-                      <li>
-                        <a href="residental.html">
-                          <img alt="Service icon" src="img/house.png" />
-                          Residential Construction
-                        </a>
-                      </li>
-  
-                      <li>
-                        <a href="commersial.html">
-                          <img alt="Service icon" src="img/building (1).png" />
-                          Commercial Office
-                        </a>
-                      </li>
-  
-                      <li>
-                        <a href="project mmt.html">
-                          <img alt="Service icon" src="img/project1.png" />
-                          Project Management
-                        </a>
-                      </li>
-                      <li>
-                        <a href="cons-contact.html">
-                          <img alt="Service icon" src="/img/Architect.png" />
-                          Construction Contracts
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="">
-                    <a href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="">
-                    <a href="aboutus.html">About Us</a>
-                  </li>
-                  <li class="active">
-                    <a href="contactus.html">Contact us</a>
-                  </li>
-                </ul>
-              </div>
-  
-              <script>
-                function DropDown(el) {
-                  this.dd = el;
-                  this.placeholder = this.dd.children('span');
-                  this.opts = this.dd.find('ul.drop li');
-                  this.val = '';
-                  this.index = -1;
-                  this.initEvents();
-                }
-                function jquery(thi) {
-                  var city = thi.getAttribute('value');
-                  var baseurl = "https://www.wehouse.in/";
-                  //  alert(baseurl);
-                  var dat = 'city=' + city;
-                  var xmlhttp = new XMLHttpRequest();
-                  xmlhttp.onreadystatechange = function () {
-                    if (this.readyState == 4 && this.status == 200) {
-                      // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
-                      // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
-                      setservicecityprice("dynamic_loc_amt", this.responseText);
-                      setservicecityprice("service_selected_city", city);
-                      setservicecityprice("service-selected-price", this.responseText);
-                      // document.getElementById("service_selected_city").innerHTML = city;
-                      // setservicecityprice('service_selected_city',this.responseText);
-                      var objSelect = document.getElementById("loc_select");
-                      var objSelect2 = document.getElementById("with-form-select1");
-                      // alert(this.responseText);
-                      if (this.responseText == '0') {
-                        pricetag('none', 'block');
-                      } else {
-                        pricetag('block', 'none');
+                <button data-target=".header-nav" data-toggle="collapse" type="button"
+                  class="navbar-toggle collapsed second-button animated-icon2">
+                  <!-- <span class="sr-only">Toggle navigation</span> -->
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+      
+                <!-- MAIN Vav -->
+      
+      
+                <div class="header-nav navbar-collapse collapse ">
+                  <a href="index.html" class="desktop">
+                    <img src="img/logo-light.png" alt="logo" class="logo-img" />
+      
+                  </a>
+                  <ul class="nav navbar-nav">
+                    <!--<li class="active"><a href="">Home</a></li>-->
+                    <li class="active">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="submenu-toogle">
+                      <a href="javascript:;">Services<span class="caret small_caret white"></span></a>
+                      <ul class="sub-menu has-child">
+                        <li>
+                          <a href="residental.html">
+                            <img alt="Service icon" src="img/house.png" />
+                            Residential Construction
+                          </a>
+                        </li>
+      
+                        <li>
+                          <a href="commersial.html">
+                            <img alt="Service icon" src="img/building (1).png" />
+                            Commercial Office
+                          </a>
+                        </li>
+      
+                        <li>
+                          <a href="project mmt.html">
+                            <img alt="Service icon" src="img/project1.png" />
+                            Project Management
+                          </a>
+                        </li>
+                        <li>
+                          <a href="cons-contact.html">
+                            <img alt="Service icon" src="img/Architect.png" />
+                            Construction Contracts
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="">
+                      <a href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="">
+                      <a href="contactus.html">Contact us</a>
+                    </li>
+      
+                  </ul>
+                </div>
+      
+                <script>
+                  function DropDown(el) {
+                    this.dd = el;
+                    this.placeholder = this.dd.children("span");
+                    this.opts = this.dd.find("ul.drop li");
+                    this.val = "";
+                    this.index = -1;
+                    this.initEvents();
+                  }
+      
+                  // function jquery(data){
+                  //     $.ajax({
+                  //         url: '/get_price',
+                  //         type: 'post',
+                  //         data: data,
+                  //         success: function(array){
+                  //         let jso = JSON.parse(array);
+                  //         message = ''
+                  //         }
+                  //     });
+                  // }
+      
+                  function jquery(thi) {
+                    var city = thi.getAttribute("value");
+                    var baseurl = "https://www.wehouse.in/";
+                    //  alert(baseurl);
+                    var dat = "city=" + city;
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function () {
+                      if (this.readyState == 4 && this.status == 200) {
+                        // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                        // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                        setservicecityprice("dynamic_loc_amt", this.responseText);
+                        setservicecityprice("service_selected_city", city);
+                        setservicecityprice(
+                          "service-selected-price",
+                          this.responseText
+                        );
+                        // document.getElementById("service_selected_city").innerHTML = city;
+                        // setservicecityprice('service_selected_city',this.responseText);
+                        var objSelect = document.getElementById("loc_select");
+                        var objSelect2 =
+                          document.getElementById("with-form-select1");
+                        // alert(this.responseText);
+                        if (this.responseText == "0") {
+                          pricetag("none", "block");
+                        } else {
+                          pricetag("block", "none");
+                        }
+                        //Set selected
+                        setSelectedValue(objSelect, city);
+                        setSelectedValue(objSelect2, city);
+                        setservicecityprice("service-selected-city", city);
+                        // alert(this.responseText);
                       }
-                      //Set selected
-                      setSelectedValue(objSelect, city);
-                      setSelectedValue(objSelect2, city)
-                      setservicecityprice('service-selected-city', city);
-                      // alert(this.responseText);
-                    }
-                  };
-                  // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
-                  xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
-                  xmlhttp.send();
-  
-                }
-  
-                function popupjquery(city) {
-                  var baseurl = "https://www.wehouse.in/";
-                  //  alert(baseurl);
-                  var dat = 'city=' + city;
-                  var xmlhttp = new XMLHttpRequest();
-                  xmlhttp.onreadystatechange = function () {
-                    if (this.readyState == 4 && this.status == 200) {
-                      // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
-                      // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
-                      setservicecityprice("dynamic_loc_amt", this.responseText);
-                      setservicecityprice("service_selected_city", city);
-                      setservicecityprice("service-selected-price", this.responseText);
-                      // document.getElementById("service_selected_city").innerHTML = city;
-                      // setservicecityprice('service_selected_city',this.responseText);
-                      var objSelect = document.getElementById("loc_select");
-                      var objSelect2 = document.getElementById("with-form-select1");
-                      if (this.responseText == '0') {
-                        pricetag('none', 'block');
-                      } else {
-                        pricetag('block', 'none');
+                    };
+                    // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+                    xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
+                    xmlhttp.send();
+                  }
+      
+                  function popupjquery(city) {
+                    var baseurl = "https://www.wehouse.in/";
+                    //  alert(baseurl);
+                    var dat = "city=" + city;
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function () {
+                      if (this.readyState == 4 && this.status == 200) {
+                        // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                        // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                        setservicecityprice("dynamic_loc_amt", this.responseText);
+                        setservicecityprice("service_selected_city", city);
+                        setservicecityprice(
+                          "service-selected-price",
+                          this.responseText
+                        );
+                        // document.getElementById("service_selected_city").innerHTML = city;
+                        // setservicecityprice('service_selected_city',this.responseText);
+                        var objSelect = document.getElementById("loc_select");
+                        var objSelect2 =
+                          document.getElementById("with-form-select1");
+                        if (this.responseText == "0") {
+                          pricetag("none", "block");
+                        } else {
+                          pricetag("block", "none");
+                        }
+                        //Set selected
+                        setSelectedValue(objSelect, city);
+                        setSelectedValue(objSelect2, city);
+                        setservicecityprice("service-selected-city", city);
+                        // $('.menu-location').removeClass('selected');
+                        $("#popupcity_add").html(city);
+                        $("#myModal8").modal("toggle");
+                        // alert('city_'+city);
+                        // $('.citypopup').fadeOut();
+                        // alert(this.responseText);
                       }
-                      //Set selected
-                      setSelectedValue(objSelect, city);
-                      setSelectedValue(objSelect2, city)
-                      setservicecityprice('service-selected-city', city);
-                      // $('.menu-location').removeClass('selected');
-                      $('#popupcity_add').html(city);
-                      $('#myModal8').modal('toggle');
-                      // alert('city_'+city);
-                      // $('.citypopup').fadeOut();
-                      // alert(this.responseText);
-                    }
-                  };
-                  // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
-                  xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
-                  xmlhttp.send();
-  
-                }
-  
-                function pricetag(beforepopup, afterpopup) {
-                  $('.before_popup').css('display', beforepopup);
-                  $('.after_popup').css('display', afterpopup);
-                }
-  
-                function setSelectedValue(selectObj, valueToSet) {
-                  for (var i = 0; i < selectObj.options.length; i++) {
-                    if (selectObj.options[i].text == valueToSet) {
-                      selectObj.options[i].selected = true;
-                      return;
+                    };
+                    // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+                    xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
+                    xmlhttp.send();
+                  }
+      
+                  function pricetag(beforepopup, afterpopup) {
+                    $(".before_popup").css("display", beforepopup);
+                    $(".after_popup").css("display", afterpopup);
+                  }
+      
+                  function setSelectedValue(selectObj, valueToSet) {
+                    for (var i = 0; i < selectObj.options.length; i++) {
+                      if (selectObj.options[i].text == valueToSet) {
+                        selectObj.options[i].selected = true;
+                        return;
+                      }
                     }
                   }
-                }
-  
-                function setservicecityprice(id, value) {
-                  var obj = document.getElementById(id);
-                  if (obj !== null) {
-                    obj.innerHTML = value;
+      
+                  function setservicecityprice(id, value) {
+                    var obj = document.getElementById(id);
+                    if (obj !== null) {
+                      obj.innerHTML = value;
+                    }
+                    // alert(value);
                   }
-                  // alert(value);
-                }
-  
-                DropDown.prototype = {
-                  initEvents: function () {
-                    var obj = this;
-                    obj.dd.on('click', function (e) {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      $(this).toggleClass('active');
+      
+                  DropDown.prototype = {
+                    initEvents: function () {
+                      var obj = this;
+                      obj.dd.on("click", function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $(this).toggleClass("active");
+                      });
+                      obj.opts
+                        .on("click", function () {
+                          var opt = $(this);
+                          obj.val = opt.text();
+                          obj.index = opt.index();
+                          obj.placeholder.text(obj.val);
+                          opt.siblings().removeClass("selected");
+                          opt
+                            .filter(':contains("' + obj.val + '")')
+                            .addClass("selected");
+                        })
+                        .change();
+                    },
+                    getValue: function () {
+                      return this.val;
+                    },
+                    getIndex: function () {
+                      return this.index;
+                    },
+                  };
+      
+                  $(function () {
+                    // create new variable for each menu
+                    var dd1 = new DropDown($("#noble-gases"));
+                    // var dd2 = new DropDown($('#other-gases'));
+                    $(document).click(function () {
+                      // close menu on document click
+                      $(".wrap-drop").removeClass("active");
                     });
-                    obj.opts.on('click', function () {
-                      var opt = $(this);
-                      obj.val = opt.text();
-                      obj.index = opt.index();
-                      obj.placeholder.text(obj.val);
-                      opt.siblings().removeClass('selected');
-                      opt.filter(':contains("' + obj.val + '")').addClass('selected');
-                    }).change();
-                  },
-                  getValue: function () {
-                    return this.val;
-                  },
-                  getIndex: function () {
-                    return this.index;
-                  }
-                };
-  
-                $(function () {
-                  // create new variable for each menu
-                  var dd1 = new DropDown($('#noble-gases'));
-                  // var dd2 = new DropDown($('#other-gases'));
-                  $(document).click(function () {
-                    // close menu on document click
-                    $('.wrap-drop').removeClass('active');
                   });
-                });
-              </script>
-  
+                </script>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
-      <!-- HEADER END -->
+        </header>
+        <!-- HEADER END -->
   <div class="page-wraper">
     <!-- CONTENT START -->
     <div class="page-content">
       <!-- INNER PAGE BANNER -->
-      <div class="mt-bnr-inr1 overlay-wraper bg-top-center"
+      <div class="mt-bnr-inr1 overlay-wraper bg-top-center mobile-view"
         style="background-image:url(img/contactbanner.jpg); background-repeat: no-repeat;">
         <div class="overlay-main bg-black opacity-05"></div>
         <div class="container">

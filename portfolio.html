@@ -237,16 +237,15 @@ gtag('config', 'AW-767771084');
 
 <body>
   <div class="page-wraper">
-    <!-- HEADER START -->
     <header class="site-header header-style-1">
       <div class="sticky-header main-bar-wraper">
         <div class="main-bar">
           <div class="container">
             <div class="logo-header d-block d-lg-none">
-              <div class="logo-header-inner logo-header-one">
-                <!-- <a href="index.html">
-                    <img src="img/logo-light.png" alt="Wehouse Logo" class="w-100"/>
-                  </a> -->
+              <div class="logo-header-inner logo-header-one mobile">
+                <a href="index.html">
+                  <img src="img/logo-light.png" alt="Logo" class="w-100" />
+                </a>
               </div>
             </div>
             <button data-target=".header-nav" data-toggle="collapse" type="button"
@@ -256,18 +255,18 @@ gtag('config', 'AW-767771084');
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-
+  
             <!-- MAIN Vav -->
-
-            <div class="header-nav navbar-collapse collapse">
-              <a href="index.html">
-                <!-- <img src="img/logo-light.png" alt="logo" class="logo-img" > -->
-
+  
+  
+            <div class="header-nav navbar-collapse collapse ">
+              <a href="index.html" class="desktop">
                 <img src="img/logo-light.png" alt="logo" class="logo-img" />
+  
               </a>
               <ul class="nav navbar-nav">
                 <!--<li class="active"><a href="">Home</a></li>-->
-                <li>
+                <li class="active">
                   <a href="index.html">Home</a>
                 </li>
                 <li class="submenu-toogle">
@@ -275,47 +274,45 @@ gtag('config', 'AW-767771084');
                   <ul class="sub-menu has-child">
                     <li>
                       <a href="residental.html">
-                        <img alt="Service icon" src="https://www.wehouse.in/assets/icons/house.png" />
+                        <img alt="Service icon" src="img/house.png" />
                         Residential Construction
                       </a>
                     </li>
-
+  
                     <li>
                       <a href="commersial.html">
-                        <img alt="Service icon" src="https://www.wehouse.in/assets/icons/building.png" />
+                        <img alt="Service icon" src="img/building (1).png" />
                         Commercial Office
                       </a>
                     </li>
-
+  
                     <li>
                       <a href="project mmt.html">
-                        <img alt="Service icon" src="https://www.wehouse.in/assets/icons/project1.png" />
+                        <img alt="Service icon" src="img/project1.png" />
                         Project Management
                       </a>
                     </li>
-                     <li>
+                    <li>
                       <a href="cons-contact.html">
-                        <img alt="Service icon" src="/img/Architect.png" />
+                        <img alt="Service icon" src="img/Architect.png" />
                         Construction Contracts
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="active">
+                <li class="">
                   <a href="portfolio.html">Portfolio</a>
                 </li>
-                <!-- <li class="">
-                    <a href="careers.html">Careers</a>
-                  </li> -->
                 <li class="">
                   <a href="aboutus.html">About Us</a>
                 </li>
                 <li class="">
                   <a href="contactus.html">Contact us</a>
                 </li>
+  
               </ul>
             </div>
-
+  
             <script>
               function DropDown(el) {
                 this.dd = el;
@@ -325,7 +322,7 @@ gtag('config', 'AW-767771084');
                 this.index = -1;
                 this.initEvents();
               }
-
+  
               // function jquery(data){
               //     $.ajax({
               //         url: '/get_price',
@@ -337,7 +334,7 @@ gtag('config', 'AW-767771084');
               //         }
               //     });
               // }
-
+  
               function jquery(thi) {
                 var city = thi.getAttribute("value");
                 var baseurl = "https://www.wehouse.in/";
@@ -376,7 +373,7 @@ gtag('config', 'AW-767771084');
                 xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
                 xmlhttp.send();
               }
-
+  
               function popupjquery(city) {
                 var baseurl = "https://www.wehouse.in/";
                 //  alert(baseurl);
@@ -418,12 +415,12 @@ gtag('config', 'AW-767771084');
                 xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
                 xmlhttp.send();
               }
-
+  
               function pricetag(beforepopup, afterpopup) {
                 $(".before_popup").css("display", beforepopup);
                 $(".after_popup").css("display", afterpopup);
               }
-
+  
               function setSelectedValue(selectObj, valueToSet) {
                 for (var i = 0; i < selectObj.options.length; i++) {
                   if (selectObj.options[i].text == valueToSet) {
@@ -432,7 +429,7 @@ gtag('config', 'AW-767771084');
                   }
                 }
               }
-
+  
               function setservicecityprice(id, value) {
                 var obj = document.getElementById(id);
                 if (obj !== null) {
@@ -440,7 +437,7 @@ gtag('config', 'AW-767771084');
                 }
                 // alert(value);
               }
-
+  
               DropDown.prototype = {
                 initEvents: function () {
                   var obj = this;
@@ -469,7 +466,7 @@ gtag('config', 'AW-767771084');
                   return this.index;
                 },
               };
-
+  
               $(function () {
                 // create new variable for each menu
                 var dd1 = new DropDown($("#noble-gases"));
@@ -485,6 +482,21 @@ gtag('config', 'AW-767771084');
       </div>
     </header>
     <!-- HEADER END -->
+    <style>
+      .mobile {
+        display: none;
+      }
+
+      @media(max-width:992px) {
+        .mobile {
+          display: block;
+        }
+
+        .desktop {
+          display: none;
+        }
+      }
+    </style>
     <!-- CONTENT START -->
     <div class="page-content">
       <!-- INNER PAGE BANNER -->
@@ -492,7 +504,7 @@ gtag('config', 'AW-767771084');
             background-image: url(new-assets/assets/portfoliobanner.jpg);
             background-repeat: no-repeat;
           ">
-        <div class="overlay-main bg-black opacity-05"></div>
+        <div class="overlay-main bg-black opacity-05 mobile-view"></div>
         <div class="container">
           <div class="mt-bnr-inr-entry">
             <div class="banner-title-outer">
