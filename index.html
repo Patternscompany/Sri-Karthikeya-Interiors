@@ -10,9 +10,22 @@
 
   <!-- PAGE TITLE HERE -->
   <title>Sri Karthikeya Infra & Interiors</title>
-  
- <link rel="stylesheet" href="css/bootstrap.min.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.min.css">
+  <link rel="stylesheet" type="text/css" href="css/wizard.css">
+  <link rel="stylesheet" type="text/css" href="css/loader.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css">
+  <link rel="stylesheet" type="text/css" href="css/switcher.css">
+  <link rel="stylesheet" type="text/css" href="css/skin-1.css">
+  <link rel="stylesheet" type="text/css" href="css/flaticon.min.css">
+
   <!-- Google Fonts -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" />
@@ -21,11 +34,10 @@
 
   <!-- MAIN STYLE SHEET -->
   <link href="css/style.css" rel="stylesheet" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
- 
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/jquery.validate.min.js"></script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
 
   <script src="https://kit.fontawesome.com/35f3e4fe0e.js" crossorigin="anonymous"></script>
 
@@ -47,255 +59,253 @@
 </head>
 
 <body>
-  <header class="site-header header-style-1">
-    <div class="sticky-header main-bar-wraper">
-      <div class="main-bar">
-        <div class="container">
-          <div class="logo-header d-block d-lg-none">
-            <div class="logo-header-inner logo-header-one mobile">
-              <a href="index.html">
-                <img src="img/logo-light.png" alt="Logo" class="w-100" />
-              </a>
-            </div>
-          </div>
-          <button data-target=".header-nav" data-toggle="collapse" type="button"
-            class="navbar-toggle collapsed second-button animated-icon2">
-            <!-- <span class="sr-only">Toggle navigation</span> -->
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <!-- MAIN Vav -->
-
-
-          <div class="header-nav navbar-collapse collapse ">
-            <a href="index.html" class="desktop">
-              <img src="img/logo-light.png" alt="logo" class="logo-img" />
-
-            </a>
-            <ul class="nav navbar-nav">
-              <!--<li class="active"><a href="">Home</a></li>-->
-              <li class="active">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="submenu-toogle">
-                <a href="javascript:;">Services<span class="caret small_caret white"></span></a>
-                <ul class="sub-menu has-child">
-                  <li>
-                    <a href="residental.html">
-                      <img alt="Service icon" src="img/house.png" />
-                      Residential Construction
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="commersial.html">
-                      <img alt="Service icon" src="img/building (1).png" />
-                      Commercial Office
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="project mmt.html">
-                      <img alt="Service icon" src="img/project1.png" />
-                      Project Management
-                    </a>
-                  </li>
-                  <li>
-                    <a href="cons-contact.html">
-                      <img alt="Service icon" src="img/Architect.png" />
-                      Construction Contracts
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="">
-                <a href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="">
-                <a href="aboutus.html">About Us</a>
-              </li>
-              <li class="">
-                <a href="contactus.html">Contact us</a>
-              </li>
-
-            </ul>
-          </div>
-
-          <script>
-            function DropDown(el) {
-              this.dd = el;
-              this.placeholder = this.dd.children("span");
-              this.opts = this.dd.find("ul.drop li");
-              this.val = "";
-              this.index = -1;
-              this.initEvents();
-            }
-
-            // function jquery(data){
-            //     $.ajax({
-            //         url: '/get_price',
-            //         type: 'post',
-            //         data: data,
-            //         success: function(array){
-            //         let jso = JSON.parse(array);
-            //         message = ''
-            //         }
-            //     });
-            // }
-
-            function jquery(thi) {
-              var city = thi.getAttribute("value");
-              var baseurl = "https://www.wehouse.in/";
-              //  alert(baseurl);
-              var dat = "city=" + city;
-              var xmlhttp = new XMLHttpRequest();
-              xmlhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                  // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
-                  // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
-                  setservicecityprice("dynamic_loc_amt", this.responseText);
-                  setservicecityprice("service_selected_city", city);
-                  setservicecityprice(
-                    "service-selected-price",
-                    this.responseText
-                  );
-                  // document.getElementById("service_selected_city").innerHTML = city;
-                  // setservicecityprice('service_selected_city',this.responseText);
-                  var objSelect = document.getElementById("loc_select");
-                  var objSelect2 =
-                    document.getElementById("with-form-select1");
-                  // alert(this.responseText);
-                  if (this.responseText == "0") {
-                    pricetag("none", "block");
-                  } else {
-                    pricetag("block", "none");
-                  }
-                  //Set selected
-                  setSelectedValue(objSelect, city);
-                  setSelectedValue(objSelect2, city);
-                  setservicecityprice("service-selected-city", city);
-                  // alert(this.responseText);
-                }
-              };
-              // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
-              xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
-              xmlhttp.send();
-            }
-
-            function popupjquery(city) {
-              var baseurl = "https://www.wehouse.in/";
-              //  alert(baseurl);
-              var dat = "city=" + city;
-              var xmlhttp = new XMLHttpRequest();
-              xmlhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                  // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
-                  // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
-                  setservicecityprice("dynamic_loc_amt", this.responseText);
-                  setservicecityprice("service_selected_city", city);
-                  setservicecityprice(
-                    "service-selected-price",
-                    this.responseText
-                  );
-                  // document.getElementById("service_selected_city").innerHTML = city;
-                  // setservicecityprice('service_selected_city',this.responseText);
-                  var objSelect = document.getElementById("loc_select");
-                  var objSelect2 =
-                    document.getElementById("with-form-select1");
-                  if (this.responseText == "0") {
-                    pricetag("none", "block");
-                  } else {
-                    pricetag("block", "none");
-                  }
-                  //Set selected
-                  setSelectedValue(objSelect, city);
-                  setSelectedValue(objSelect2, city);
-                  setservicecityprice("service-selected-city", city);
-                  // $('.menu-location').removeClass('selected');
-                  $("#popupcity_add").html(city);
-                  $("#myModal8").modal("toggle");
-                  // alert('city_'+city);
-                  // $('.citypopup').fadeOut();
-                  // alert(this.responseText);
-                }
-              };
-              // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
-              xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
-              xmlhttp.send();
-            }
-
-            function pricetag(beforepopup, afterpopup) {
-              $(".before_popup").css("display", beforepopup);
-              $(".after_popup").css("display", afterpopup);
-            }
-
-            function setSelectedValue(selectObj, valueToSet) {
-              for (var i = 0; i < selectObj.options.length; i++) {
-                if (selectObj.options[i].text == valueToSet) {
-                  selectObj.options[i].selected = true;
-                  return;
-                }
-              }
-            }
-
-            function setservicecityprice(id, value) {
-              var obj = document.getElementById(id);
-              if (obj !== null) {
-                obj.innerHTML = value;
-              }
-              // alert(value);
-            }
-
-            DropDown.prototype = {
-              initEvents: function () {
-                var obj = this;
-                obj.dd.on("click", function (e) {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  $(this).toggleClass("active");
-                });
-                obj.opts
-                  .on("click", function () {
-                    var opt = $(this);
-                    obj.val = opt.text();
-                    obj.index = opt.index();
-                    obj.placeholder.text(obj.val);
-                    opt.siblings().removeClass("selected");
-                    opt
-                      .filter(':contains("' + obj.val + '")')
-                      .addClass("selected");
-                  })
-                  .change();
-              },
-              getValue: function () {
-                return this.val;
-              },
-              getIndex: function () {
-                return this.index;
-              },
-            };
-
-            $(function () {
-              // create new variable for each menu
-              var dd1 = new DropDown($("#noble-gases"));
-              // var dd2 = new DropDown($('#other-gases'));
-              $(document).click(function () {
-                // close menu on document click
-                $(".wrap-drop").removeClass("active");
-              });
-            });
-          </script>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- HEADER END -->
   <div class="page-wraper">
     <!-- HEADER START -->
-    <!-- HEADER START -->
-
+    <header class="site-header header-style-1">
+      <div class="sticky-header main-bar-wraper">
+        <div class="main-bar">
+          <div class="container">
+            <div class="logo-header d-block d-lg-none">
+              <div class="logo-header-inner logo-header-one mobile">
+                <a href="index.html">
+                  <img src="img/logo-light.png" alt="Logo" class="w-100" />
+                </a>
+              </div>
+            </div>
+            <button data-target=".header-nav" data-toggle="collapse" type="button"
+              class="navbar-toggle collapsed second-button animated-icon2">
+              <!-- <span class="sr-only">Toggle navigation</span> -->
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+  
+            <!-- MAIN Vav -->
+  
+  
+            <div class="header-nav navbar-collapse collapse ">
+              <a href="index.html" class="desktop">
+                <img src="img/logo-light.png" alt="logo" class="logo-img" />
+  
+              </a>
+              <ul class="nav navbar-nav">
+                <!--<li class="active"><a href="">Home</a></li>-->
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="submenu-toogle">
+                  <a href="javascript:;">Services<span class="caret small_caret white"></span></a>
+                  <ul class="sub-menu has-child">
+                    <li>
+                      <a href="residental.html">
+                        <img alt="Service icon" src="img/house.png" />
+                        Residential Construction
+                      </a>
+                    </li>
+  
+                    <li>
+                      <a href="commersial.html">
+                        <img alt="Service icon" src="img/building (1).png" />
+                        Commercial Office
+                      </a>
+                    </li>
+  
+                    <li>
+                      <a href="project mmt.html">
+                        <img alt="Service icon" src="img/project1.png" />
+                        Project Management
+                      </a>
+                    </li>
+                    <li>
+                      <a href="cons-contact.html">
+                        <img alt="Service icon" src="img/Architect.png" />
+                        Construction Contracts
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="">
+                  <a href="aboutus.html">About Us</a>
+                </li>
+                <li class="">
+                  <a href="contactus.html">Contact us</a>
+                </li>
+  
+              </ul>
+            </div>
+  
+            <script>
+              function DropDown(el) {
+                this.dd = el;
+                this.placeholder = this.dd.children("span");
+                this.opts = this.dd.find("ul.drop li");
+                this.val = "";
+                this.index = -1;
+                this.initEvents();
+              }
+  
+              // function jquery(data){
+              //     $.ajax({
+              //         url: '/get_price',
+              //         type: 'post',
+              //         data: data,
+              //         success: function(array){
+              //         let jso = JSON.parse(array);
+              //         message = ''
+              //         }
+              //     });
+              // }
+  
+              function jquery(thi) {
+                var city = thi.getAttribute("value");
+                var baseurl = "https://www.wehouse.in/";
+                //  alert(baseurl);
+                var dat = "city=" + city;
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                    // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                    // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                    setservicecityprice("dynamic_loc_amt", this.responseText);
+                    setservicecityprice("service_selected_city", city);
+                    setservicecityprice(
+                      "service-selected-price",
+                      this.responseText
+                    );
+                    // document.getElementById("service_selected_city").innerHTML = city;
+                    // setservicecityprice('service_selected_city',this.responseText);
+                    var objSelect = document.getElementById("loc_select");
+                    var objSelect2 =
+                      document.getElementById("with-form-select1");
+                    // alert(this.responseText);
+                    if (this.responseText == "0") {
+                      pricetag("none", "block");
+                    } else {
+                      pricetag("block", "none");
+                    }
+                    //Set selected
+                    setSelectedValue(objSelect, city);
+                    setSelectedValue(objSelect2, city);
+                    setservicecityprice("service-selected-city", city);
+                    // alert(this.responseText);
+                  }
+                };
+                // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+                xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
+                xmlhttp.send();
+              }
+  
+              function popupjquery(city) {
+                var baseurl = "https://www.wehouse.in/";
+                //  alert(baseurl);
+                var dat = "city=" + city;
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                    // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                    // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                    setservicecityprice("dynamic_loc_amt", this.responseText);
+                    setservicecityprice("service_selected_city", city);
+                    setservicecityprice(
+                      "service-selected-price",
+                      this.responseText
+                    );
+                    // document.getElementById("service_selected_city").innerHTML = city;
+                    // setservicecityprice('service_selected_city',this.responseText);
+                    var objSelect = document.getElementById("loc_select");
+                    var objSelect2 =
+                      document.getElementById("with-form-select1");
+                    if (this.responseText == "0") {
+                      pricetag("none", "block");
+                    } else {
+                      pricetag("block", "none");
+                    }
+                    //Set selected
+                    setSelectedValue(objSelect, city);
+                    setSelectedValue(objSelect2, city);
+                    setservicecityprice("service-selected-city", city);
+                    // $('.menu-location').removeClass('selected');
+                    $("#popupcity_add").html(city);
+                    $("#myModal8").modal("toggle");
+                    // alert('city_'+city);
+                    // $('.citypopup').fadeOut();
+                    // alert(this.responseText);
+                  }
+                };
+                // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+                xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
+                xmlhttp.send();
+              }
+  
+              function pricetag(beforepopup, afterpopup) {
+                $(".before_popup").css("display", beforepopup);
+                $(".after_popup").css("display", afterpopup);
+              }
+  
+              function setSelectedValue(selectObj, valueToSet) {
+                for (var i = 0; i < selectObj.options.length; i++) {
+                  if (selectObj.options[i].text == valueToSet) {
+                    selectObj.options[i].selected = true;
+                    return;
+                  }
+                }
+              }
+  
+              function setservicecityprice(id, value) {
+                var obj = document.getElementById(id);
+                if (obj !== null) {
+                  obj.innerHTML = value;
+                }
+                // alert(value);
+              }
+  
+              DropDown.prototype = {
+                initEvents: function () {
+                  var obj = this;
+                  obj.dd.on("click", function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $(this).toggleClass("active");
+                  });
+                  obj.opts
+                    .on("click", function () {
+                      var opt = $(this);
+                      obj.val = opt.text();
+                      obj.index = opt.index();
+                      obj.placeholder.text(obj.val);
+                      opt.siblings().removeClass("selected");
+                      opt
+                        .filter(':contains("' + obj.val + '")')
+                        .addClass("selected");
+                    })
+                    .change();
+                },
+                getValue: function () {
+                  return this.val;
+                },
+                getIndex: function () {
+                  return this.index;
+                },
+              };
+  
+              $(function () {
+                // create new variable for each menu
+                var dd1 = new DropDown($("#noble-gases"));
+                // var dd2 = new DropDown($('#other-gases'));
+                $(document).click(function () {
+                  // close menu on document click
+                  $(".wrap-drop").removeClass("active");
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
 
     <style>
       .mobile {
@@ -761,8 +771,7 @@
                 <div class="mt-icon-box-wraper m-b30">
                   <div class="relative icon-count-2 p-t30"> <span class="icon-count-number p-l50 p-r20">1</span>
                     <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                        class="icon-cell"><img src="img/requirement1.png"
-                          alt=""></span>
+                        class="icon-cell"><img src="img/requirement1.png" alt=""></span>
                     </div>
                     <div class="icon-content center p-t10 p-b0 p-l10 p-r10">
                       <h4 class="mt-tilte m-b25 text-center">Your Requirement</h4>
@@ -774,8 +783,7 @@
                 <div class="mt-icon-box-wraper m-b30">
                   <div class="relative icon-count-2 p-t30"> <span class="icon-count-number p-l50 p-r20">2</span>
                     <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                        class="icon-cell"><img src="img/costestimate1.png"
-                          alt=""></span>
+                        class="icon-cell"><img src="img/costestimate1.png" alt=""></span>
                     </div>
                     <div class="icon-content p-t10 p-b0 p-l10 p-r10">
                       <h4 class="mt-tilte m-b25 text-center">Cost Estimation</h4>
@@ -787,8 +795,7 @@
                 <div class="mt-icon-box-wraper m-b30">
                   <div class="relative icon-count-2 p-t30"> <span class="icon-count-number  p-l50 p-r20">3</span>
                     <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                        class="icon-cell"><img src="img/schedule1.png"
-                          alt=""></span>
+                        class="icon-cell"><img src="img/schedule1.png" alt=""></span>
                     </div>
                     <div class="icon-content center p-t10 p-b0 p-l10 p-r10">
                       <h4 class="mt-tilte m-b25 text-center">Schedule Visit</h4>
@@ -800,8 +807,7 @@
                 <div class="mt-icon-box-wraper m-b30">
                   <div class="relative icon-count-2 p-t30"> <span class="icon-count-number  p-l50 p-r20">4</span>
                     <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                        class="icon-cell"><img src="img/excute1.png"
-                          alt=""></span>
+                        class="icon-cell"><img src="img/excute1.png" alt=""></span>
                     </div>
                     <div class="icon-content p-t10 p-b0 p-l10 p-r10">
                       <h4 class="mt-tilte m-b25 text-center">Work Execution</h4>
@@ -813,8 +819,7 @@
                 <div class="mt-icon-box-wraper m-b30">
                   <div class="relative icon-count-2 p-t30"> <span class="icon-count-number  p-l50 p-r20">5</span>
                     <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                        class="icon-cell"><img src="img/architecture1.png"
-                          alt=""></span>
+                        class="icon-cell"><img src="img/architecture1.png" alt=""></span>
                     </div>
                     <div class="icon-content p-t10 p-b0 p-l10 p-r10">
                       <h4 class="mt-tilte m-b25 text-center">Satisfied Delivery</h4>
@@ -879,8 +884,7 @@
           </div>
           <div class="col-md-4 whychoose-box">
             <span class="whychoose-icon">
-              <img src="img/insured-work-icon-min.png"
-                alt="Wide range of Construction and monitoring services" />
+              <img src="img/insured-work-icon-min.png" alt="Wide range of Construction and monitoring services" />
             </span>
             <aside class="whychoose-text">
               <h5 class="margin-0">Insured Work</h5>
@@ -893,8 +897,7 @@
           </div>
           <div class="col-md-4 whychoose-box">
             <span class="whychoose-icon">
-              <img src="img/digital-tracking-icon-min.png"
-                alt="Integrated Home construction and monitoring services" />
+              <img src="img/digital-tracking-icon-min.png" alt="Integrated Home construction and monitoring services" />
             </span>
             <aside class="whychoose-text">
               <h5 class="margin-0">100% transparency</h5>
@@ -909,8 +912,7 @@
         <div class="col-md-12 mt-15 padding-0">
           <div class="col-md-4 whychoose-box">
             <span class="whychoose-icon">
-              <img src="img/transparency-icon-min.png"
-                alt="End to End Construction Services" />
+              <img src="img/transparency-icon-min.png" alt="End to End Construction Services" />
             </span>
             <aside class="whychoose-text">
               <h5 class="margin-0">Digital Tracking</h5>
@@ -937,8 +939,7 @@
           </div>
           <div class="col-md-4 whychoose-box">
             <span class="whychoose-icon">
-              <img src="img/on-time-delivery-icon.png"
-                alt="Wide range of Construction and monitoring services" />
+              <img src="img/on-time-delivery-icon.png" alt="Wide range of Construction and monitoring services" />
             </span>
             <aside class="whychoose-text">
               <h5 class="margin-0">On time Delivery</h5>
@@ -953,8 +954,7 @@
         <div class="col-md-12 mt-15 padding-0">
           <div class="col-md-4 whychoose-box">
             <span class="whychoose-icon">
-              <img src="img/flexible.png"
-                alt="Wide range of Construction and monitoring services" />
+              <img src="img/flexible.png" alt="Wide range of Construction and monitoring services" />
             </span>
             <aside class="whychoose-text">
               <h5 class="margin-0">Flexible Pricing Models</h5>
@@ -967,8 +967,7 @@
           </div>
           <div class="col-md-4 whychoose-box">
             <span class="whychoose-icon">
-              <img src="img/curbing.png"
-                alt="Wide range of Construction and monitoring services" />
+              <img src="img/curbing.png" alt="Wide range of Construction and monitoring services" />
             </span>
             <aside class="whychoose-text">
               <h5 class="margin-0">Curbing Malpractices</h5>
@@ -981,8 +980,7 @@
           </div>
           <div class="col-md-4 whychoose-box">
             <span class="whychoose-icon">
-              <img src="img/nocostruns.png"
-                alt="Wide range of Construction and monitoring services" />
+              <img src="img/nocostruns.png" alt="Wide range of Construction and monitoring services" />
             </span>
             <aside class="whychoose-text">
               <h5 class="margin-0">No Cost Over Runs</h5>
@@ -1392,10 +1390,10 @@
                     Conditions</a></span>
               </div>
               <div class="col-md-2"></div> -->
-            </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </footer>
   <!-- FOOTER END -->
@@ -1577,14 +1575,15 @@
 
   <script src="js/jquery.min.js"></script>
 
-  <!--<script src="https://www.wehouse.in/new-assets/js/jquery-1.12.4.min.js"></script>-->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
 
   <script>
     $(document).ready(function () {
-      $(".second-button").on("click", function () {
-        $(".animated-icon2").toggleClass("open");
+
+      $('.second-button').on('click', function () {
+
+        $('.animated-icon2').toggleClass('open');
       });
     });
   </script>
@@ -1653,10 +1652,11 @@
   <!-- PARALLAX BG IMAGE   -->
 
   <script src="js/custom.min.js"></script>
+  <!-- <script src="js/custom.js"></script> -->
 
   <!-- CUSTOM FUCTIONS  -->
 
-  <!--<script src="js/shortcode.js"></script>-->
+  <script src="js/shortcode.js"></script>
 
   <!-- SHORTCODE FUCTIONS  -->
 
@@ -1670,6 +1670,7 @@
 
   <script src="js/prefixfree.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/revolution-plugin.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
     new WOW.init();

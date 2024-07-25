@@ -16414,7 +16414,7 @@ r .center-image {
   }
   .logo-header-inner img {
     width: 100px;
-    height: 50px;
+    height: auto;
   }
   .mobile-view {
     margin-top: 60px;

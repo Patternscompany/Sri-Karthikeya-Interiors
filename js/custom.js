@@ -161,7 +161,7 @@
       jQuery(".sub-menu").parent("li").addClass("has-child"),
       jQuery(".mega-menu").parent("li").addClass("has-child"),
       jQuery(
-        "<div class='fa fa-close submenu-toogle'>hocomoco-construction-services-navigation----------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>"
+        "<div class='fa fa-close submenu-toogle'>--</div>"
       ).insertAfter(".has-child > a"),
       jQuery(".has-child a+.submenu-toogle").on("click", function (e) {
         jQuery(this)
