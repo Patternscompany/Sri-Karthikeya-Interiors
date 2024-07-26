@@ -431,430 +431,36 @@
                                 </div>
                               </div>
                               <!-- TITLE END -->
-                              <div class="wizard-container p-b10 p-t40" id="chartwizard">
-                                <div class="card wizard-card" data-color="red" id="wizard">
-                                  <form name="myform" id="myform" action="https://www.wehouse.in/Home/commercia"
-                                    method="post" autocomplete="off">
-                                    <div class="modal fade" id="nationalres" role="dialog">
-                                      <!-- modal dialog -->
-                                      <div class="modal-dialog">
-                                        <div class="modal-content">
-                                          <!-- modal header -->
-                                          <div class="modal-header">
-
-                                            <h4 class="modal-title"> Your current Location (Country of Residence) </h4>
-                                          </div>
-                                          <!-- end modal header-->
-                                          <!-- modal body -->
-                                          <div class="modal-body">
-                                            <div class="row national">
-                                              <div class="col-md-6">
-                                                <label>
-                                                  <input type="radio" class="option-input radio" class="form-control"
-                                                    required name="residence" id="residence"
-                                                    value="India" />India</label>
-                                              </div>
-                                              <div class="col-sm-6">
-                                                <label>
-                                                  <input type="radio" class="option-input radio" class="form-control"
-                                                    required name="residence" id="residence"
-                                                    value="International" />Outside India</label>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <!-- end modal body -->
-                                          <!-- modal footer-->
-                                          <div class="modal-footer">
-
-                                          </div>
-                                          <!-- end modal footer -->
-                                        </div>
-                                        <!-- end modal content-->
-                                      </div>
-                                      <!-- end modal dialog-->
-                                    </div>
-
-                                    <div class="wizard-navigation">
-                                      <div class="col-md-offset-1 col-sm-10 p-lr0">
-                                        <div class="progress" id="typeconstruction">
-                                          <div class="progress-bar progress-bar-primary">
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <ul style="display: none;">
-                                        <li><a href="#construction" data-toggle="tab">01</a>
-                                        </li>
-                                        <li><a href="#schedular" data-toggle="tab">02</a>
-                                        </li>
-                                        <li><a href="#stage" data-toggle="tab">03</a>
-                                        </li>
-                                        <li><a href="#platsize" data-toggle="tab">04</a>
-                                        </li>
-                                        <li><a href="#fillform" data-toggle="tab">05</a>
-                                        </li>
-                                      </ul>
-                                    </div>
-
-
-
-                                    <div class="tab-content">
-                                      <div class="tab-pane" id="construction">
-                                        <div class="row">
-
-                                          <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
-                                            <div class="first-row">
-
-                                              <div class="col-sm-12">
-                                                <h3 class="info-text text-center"> <strong>Type of Construction
-                                                  </strong></h3>
-                                              </div> <span class="errorrescon1" style="color: red; display: none">
-                                                *Required Field (Type of Construction)</span>
-                                              <div class="row product_cat">
-
-                                                <div class="col-sm-6">
-                                                  <label>
-                                                    <input type="radio" class="option-input radio" data-toggle="modal"
-                                                      data-target="#nationalres" required="required"
-                                                      name="construction_type" value="Apartment" />Apartment</label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                  <label>
-                                                    <input type="radio" class="option-input radio" data-toggle="modal"
-                                                      data-target="#nationalres" required="required"
-                                                      name="construction_type"
-                                                      value="Independent House/Villa" />Independent House/Villa</label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                  <label>
-                                                    <input type="radio" class="option-input radio" data-toggle="modal"
-                                                      data-target="#nationalres" required="required"
-                                                      name="construction_type" value="Farm/ Guest House " />Farm/ Guest
-                                                    House </label>
-                                                </div>
-
-                                                <div class="col-sm-6">
-                                                  <label>
-                                                    <input type="radio" class="option-input radio" data-toggle="modal"
-                                                      data-target="#nationalres" required="required"
-                                                      name="construction_type" value="Others" />Others</label>
-                                                </div>
-                                                <div class="col-sm-12 p-t20">
-                                                  <!-- <div class="text-center">
-                                                                                                    <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-                                                                                                    <a href="">
-                                                                                                    <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd' name='Submit' value='Submit' />
-                                                                                                </a>
-                                                                                                </div> -->
-                                                  <div class="pull-right">
-                                                    <!--  <input type='button' class='btn btn-next btn-fill m-b15 site-button btn-effect m-r15 btn-wd' name='next' value='Next' /> -->
-                                                    <button id="nextrescon1" name="next" type="button" value="Next"
-                                                      class="btn btn-next btn-fill site-button btn-effect btn-wd">Next</button>
-                                                  </div>
-
-                                                  <div class="pull-left">
-                                                    <input type='button'
-                                                      class='btn btn-previous btn-fill btn-default btn-wd'
-                                                      name='previous' value='Previous' />
-                                                    <div class="footer-checkbox">
-                                                      <div class="col-sm-12">
-                                                        <!--  <div class="checkbox">
-                                          <label>
-                                            <input type="checkbox" name="optionsCheckboxes">
-                                          </label>
-                                      </div> -->
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <!-- <div class="col-sm-12 p-t20">
-                                                                                              <h5><b>Your selected <span id="service_selected_city" > Hyderabad </span> location then starting price is <span id="service-selected-price" > 1599 </span>/-SFT</b></h5>		
-                                                                                            </div> -->
-                                              </div>
-
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="tab-pane" id="schedular">
-                                        <div class="row">
-
-                                          <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12 p-b30">
-                                            <div class="first-row">
-                                              <div class="col-sm-12">
-                                                <h3 class="info-text"> <strong>When Do you Plan to Start </strong></h3>
-                                              </div>
-                                              <div class="row product_cat">
-                                                <div class="col-md-12">
-
-                                                  <!--<input type="date" class="form-control" required name="schedular" id="schedular" />-->
-                                                  <div id="datepicker" class="input-group date">
-                                                    <input class="form-control" type="text" required name="schedular"
-                                                      id="schedular" />
-                                                    <span class="input-group-addon"><i
-                                                        class="glyphicon glyphicon-calendar"></i></span>
-                                                  </div>
-
-                                                </div>
-
-                                                <div class="col-sm-12 p-t30">
-                                                  <!-- <div class="text-center">
-                                                                                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-                                                                                                <a href="">
-                                                                                                    <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd' name='Submit' value='Submit' />
-                                                                                                </a>
-                                                                                            </div> -->
-                                                  <div class="pull-right">
-                                                    <!-- <input type='button' class='btn btn-next btn-fill m-b15 site-button btn-effect m-r15 btn-wd' name='next' value='Next' /> -->
-                                                    <button name="next" type="button" value="Next"
-                                                      class="btn btn-next btn-fill site-button btn-effect btn-wd">Next</button>
-                                                  </div>
-
-                                                  <div class="pull-left">
-                                                    <!--  <input type='button' class='btn btn-previous btn-fill m-b15 site-button text-uppercase gray m-r5 btn-wd' name='previous' value='Previous' /> -->
-                                                    <button
-                                                      class="btn btn-previous btn-fill site-button-secondry btn-effect text-uppercase gray btn-wd"
-                                                      type="button" name='previous' value='Previous'>Previous</button>
-                                                    <div class="footer-checkbox">
-                                                      <div class="col-sm-12">
-                                                        <div class="checkbox">
-                                                          <label>
-                                                            <input type="checkbox" name="optionsCheckboxes">
-                                                          </label>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                      </div>
-                                      <div class="tab-pane" id="stage">
-                                        <div class="row">
-
-                                          <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
-                                            <div class="first-row">
-
-                                              <div class="col-sm-12">
-                                                <h3 class="info-text text-center"> <strong>Please Choose Current
-                                                    Stage</strong></h3>
-                                              </div> <span class="errorrescon2" style="color: red; display: none">
-                                                *Required Field (Choose Current Stage)</span>
-                                              <div class="row product_cat">
-                                                <div class="col-md-6"><label>
-                                                    <input type="radio" class="option-input radio" required="required"
-                                                      name="stage" value="Govt. Approvals" />Govt. Approvals</label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                  <label>
-                                                    <input type="radio" class="option-input radio" required="required"
-                                                      name="stage" value="Designing" />Designing</label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                  <label>
-                                                    <input type="radio" class="option-input radio" required="required"
-                                                      name="stage" value="Execution" />Execution</label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                  <label>
-                                                    <input type="radio" class="option-input radio" required="required"
-                                                      name="stage" value="Not Specified Here" />Not Specified
-                                                    Here</label>
-                                                </div>
-
-                                                <div class="col-sm-12 p-t20">
-                                                  <!-- <div class="text-center">
-                                                                                                    <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-                                                                                                    <a href="">
-                                                                                                    <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd' name='Submit' value='Submit' />
-                                                                                                </a>
-                                                                                                </div> -->
-                                                  <div class="pull-right">
-                                                    <!--  <input type='button' class='btn btn-next btn-fill m-b15 site-button btn-effect m-r15 btn-wd' name='next' value='Next' /> -->
-                                                    <button id="nextrescon2" name="next" type="button" value="Next"
-                                                      class="btn btn-next btn-fill site-button btn-effect btn-wd">Next
-                                                    </button>
-                                                  </div>
-
-                                                  <div class="pull-left">
-                                                    <button
-                                                      class="btn btn-previous btn-fill site-button-secondry btn-effect text-uppercase gray btn-wd"
-                                                      type="button" name='previous' value='Previous'>Previous</button>
-                                                    <div class="footer-checkbox">
-                                                      <div class="col-sm-12">
-                                                        <!--  <div class="checkbox">
-                                          <label>
-                                            <input type="checkbox" name="optionsCheckboxes">
-                                          </label>
-                                      </div> -->
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="tab-pane" id="platsize">
-                                        <div class="row">
-
-                                          <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12 p-b30">
-                                            <div class="first-row">
-                                              <div class="col-sm-12">
-                                                <h3 class="info-text"> <strong>Land Details</strong></h3>
-                                              </div>
-                                              <div class="row product_cat">
-                                                <div class="col-md-4 ">
-                                                  <label>Land Size </label><select class="form-control"
-                                                    name="plot_size_sq" id="plot_size_sq" onchange="GetValue(this)"
-                                                    required="">
-                                                    <option value="Sq yards">Sq yards</option>
-                                                    <option value="sq feet">Sq feet</option>
-                                                    <option value="sq feet">Acres</option>
-                                                    <option value="Not sure">Not sure</option>
-                                                  </select>
-                                                </div>
-                                                <div class="col-md-8" style="margin-top:31px;">
-                                                  <input type="text" class="form-control only-numeric6 test" required
-                                                    name="size" id="size" />
-                                                  <input type="text" class="form-control testsize" name="size1"
-                                                    id="size1" style="display: none" />
-                                                  <span class="errorrescon4" style="color: red; display: none">
-                                                    *Required Field (Land Size)</span>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                  <label>Land Description </label>
-                                                  <textarea type="text" class="form-control"
-                                                    placeholder="Please describe your plot such as Road Width, Plot Facing, Width X Depth and any other information."
-                                                    required name="comments" id="comments" /></textarea>
-                                                  <span class="errorrescon5" style="color: red; display: none">
-                                                    *Required Field (Land Description)</span>
-                                                </div>
-                                                <div class="col-sm-12 p-t30">
-                                                  <!-- <div class="text-center">
-                                                                                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-                                                                                                <a href="">
-                                                                                                    <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd' name='Submit' value='Submit' />
-                                                                                                </a>
-                                                                                            </div> -->
-                                                  <div class="pull-right">
-                                                    <!-- <input type='button' class='btn btn-next btn-fill m-b15 site-button btn-effect m-r15 btn-wd' name='next' value='Next' /> -->
-                                                    <button id="nextrescon5" name="next" type="button" value="Next"
-                                                      class="btn btn-next btn-fill site-button btn-effect btn-wd">Next</button>
-                                                  </div>
-
-                                                  <div class="pull-left">
-                                                    <!--  <input type='button' class='btn btn-previous btn-fill m-b15 site-button text-uppercase gray m-r5 btn-wd' name='previous' value='Previous' /> -->
-                                                    <button
-                                                      class="btn btn-previous btn-fill site-button-secondry btn-effect text-uppercase gray btn-wd"
-                                                      type="button" name='previous' value='Previous'>Previous</button>
-                                                    <div class="footer-checkbox">
-                                                      <div class="col-sm-12">
-                                                        <div class="checkbox">
-                                                          <label>
-                                                            <input type="checkbox" name="optionsCheckboxes">
-                                                          </label>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="tab-pane" id="fillform">
-                                        <div class="row">
-
-                                          <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-                                            <div class="first-row">
-                                              <div class="col-sm-12">
-                                                <h3 class="info-text"> <strong>Contact Information</strong></h3>
-                                              </div>
-                                              <div class="row product_cat">
-                                                <div class="col-md-6">
-                                                  <label>Name *</label>
-                                                  <input type="text" name="name" id="name" required
-                                                    class="form-control" />
-                                                  <span class="errorrescon7" style="color: red; display: none">
-                                                    *Required Field (Name)</span>
-                                                </div>
-                                                <div class="col-md-6">
-                                                  <label>Phone Number *</label>
-                                                  <input type="text" name="contact" required size="10" id="contact"
-                                                    onkeypress='return isNumberKey(event);' class="form-control" />
-                                                  <span class="errorrescon8" style="color: red; display: none">
-                                                    *Required Field (Phone Number)</span>
-                                                  <span class="errorrescon81" style="color: red; display: none">
-                                                    *Required Field (Please enter Country Code)</span>
-                                                </div>
-                                                <div class="col-md-6">
-                                                  <label>Email *</label>
-                                                  <input type="email" name="email" required id="email"
-                                                    class="form-control" />
-                                                  <span class="errorrescon9" style="color: red; display: none">
-                                                    *Required Field (Email ID)</span>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                  <label>Schedule An Appoinment</label>
-                                                  <!--<input type="date" class="form-control" required name="date" id="date" />
-                                                                                            <input type="hidden" class="form-control" required name="form_name" id="form_name" value="Residencial Construction" />-->
-                                                  <div id="datepicker1" class="input-group date">
-                                                    <input class="form-control" type="text" required name="date"
-                                                      id="date" />
-                                                    <span class="input-group-addon"><i
-                                                        class="glyphicon glyphicon-calendar"></i></span>
-                                                  </div>
-                                                  <input type="hidden" class="form-control" required name="form_name"
-                                                    id="form_name" value="Residencial Construction" />
-                                                </div>
-                                                <div class="col-sm-12 p-t30">
-                                                  <!-- <div class="text-center">
-                                                                                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-                                                                                                <a href="">
-                                                                                                    <input type='button' class='btn btn-finish btn-fill btn-warning  btn-wd' name='Submit' value='Submit' />
-                                                                                                </a>
-                                                                                            </div> -->
-                                                  <div class="pull-right">
-
-                                                    <!-- <input type='submit' class='btn btn-finish btn-fill m-b15 site-button btn-effect m-r15 btn-wd' name='submit' id="submit" value='Submit' /> -->
-                                                    <button id="submitrescon7" name="submit" type="submit" id="submit"
-                                                      value="Submit"
-                                                      class="btn btn-finish btn-fill site-button btn-effect btn-wd">Submit</button>
-                                                  </div>
-
-                                                  <div class="pull-left">
-                                                    <!--  <input type='button' class='btn btn-previous btn-fill m-b15 site-button text-uppercase gray m-r5 btn-wd' name='previous' value='Previous' /> -->
-                                                    <button
-                                                      class="btn btn-previous btn-fill site-button-secondry btn-effect text-uppercase gray btn-wd"
-                                                      type="button" name='previous' value='Previous'>Previous</button>
-                                                    <div class="footer-checkbox">
-                                                      <div class="col-sm-12">
-                                                        <div class="checkbox">
-                                                          <label>
-                                                            <input type="checkbox" name="optionsCheckboxes">
-                                                          </label>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                  </form>
+                              <form method="POST" id="bannerForm">
+                                <div class="row">
+                                  <div class="form-group consult">
+                                    <label class="control-label">Name</label>
+                                    <input type="text" name="name" id="name" required placeholder="Name" required
+                                      class="form-control" />
+                                  </div>
+                                  <div class="form-group consult">
+                                    <label class="control-label">Phone</label>
+                                    <input type="text" name="phone" id="phone" required placeholder="Name" required
+                                      class="form-control" />
+                                  </div>
+                                  <div class="form-group consult">
+                                    <label class="control-label">Email</label>
+                                    <input type="text" name="email" id="email" required placeholder="Name" required
+                                      class="form-control" />
+                                  </div>
+                                  <div class="form-group consult">
+                                    <label class="control-label">Enquiry Message</label>
+                                    <textarea name="query" required id="query" resize="none" class="form-control"
+                                      style="height: 40px"></textarea>
+                                  </div>
+                                  <div class="form-group consult">
+                                    <button class="m-b20 m-t10 site-button btn-effect text-uppercase m-r25"
+                                      type="submit">
+                                      Submit
+                                    </button>
+                                  </div>
                                 </div>
-                              </div>
+                              </form>
 
 
                               <!-- wizard container -->
@@ -917,8 +523,7 @@
                         <div class="mt-icon-box-wraper m-b30">
                           <div class="relative icon-count-2 p-t30"> <span class="icon-count-number p-l50 p-r20">1</span>
                             <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                                class="icon-cell"><img
-                                  src="img/requirement1.png" alt=""></span>
+                                class="icon-cell"><img src="img/requirement1.png" alt=""></span>
                             </div>
                             <div class="icon-content center p-t10 p-b0 p-l10 p-r10">
                               <h4 class="mt-tilte m-b25 text-center">Your Requirement</h4>
@@ -930,8 +535,7 @@
                         <div class="mt-icon-box-wraper m-b30">
                           <div class="relative icon-count-2 p-t30"> <span class="icon-count-number p-l50 p-r20">2</span>
                             <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                                class="icon-cell"><img
-                                  src="img/costestimate1.png" alt=""></span>
+                                class="icon-cell"><img src="img/costestimate1.png" alt=""></span>
                             </div>
                             <div class="icon-content p-t10 p-b0 p-l10 p-r10">
                               <h4 class="mt-tilte m-b25 text-center">Cost Estimation</h4>
@@ -944,8 +548,7 @@
                           <div class="relative icon-count-2 p-t30"> <span
                               class="icon-count-number  p-l50 p-r20">3</span>
                             <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                                class="icon-cell"><img src="img/schedule1.png"
-                                  alt=""></span>
+                                class="icon-cell"><img src="img/schedule1.png" alt=""></span>
                             </div>
                             <div class="icon-content center p-t10 p-b0 p-l10 p-r10">
                               <h4 class="mt-tilte m-b25 text-center">Schedule Visit</h4>
@@ -958,8 +561,7 @@
                           <div class="relative icon-count-2 p-t30"> <span
                               class="icon-count-number  p-l50 p-r20">4</span>
                             <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                                class="icon-cell"><img src="img/excute1.png"
-                                  alt=""></span>
+                                class="icon-cell"><img src="img/excute1.png" alt=""></span>
                             </div>
                             <div class="icon-content p-t10 p-b0 p-l10 p-r10">
                               <h4 class="mt-tilte m-b25 text-center">Work Execution</h4>
@@ -972,8 +574,7 @@
                           <div class="relative icon-count-2 p-t30"> <span
                               class="icon-count-number  p-l50 p-r20">5</span>
                             <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
-                                class="icon-cell"><img
-                                  src="img/architecture1.png" alt=""></span>
+                                class="icon-cell"><img src="img/architecture1.png" alt=""></span>
                             </div>
                             <div class="icon-content p-t10 p-b0 p-l10 p-r10">
                               <h4 class="mt-tilte m-b25 text-center">Satisfied Delivery</h4>
@@ -1044,8 +645,7 @@
                     <div class="col-md-12 mt-15">
                       <div class="col-md-4 whychoose-box">
                         <span class="whychoose-icon">
-                          <img alt="End to End Construction Services"
-                            src="img/transparency-icon-min.png">
+                          <img alt="End to End Construction Services" src="img/transparency-icon-min.png">
                         </span>
                         <aside class="whychoose-text">
                           <h5 class="margin-0">Digital Tracking</h5>
@@ -1080,8 +680,7 @@
                     <div class="col-md-12 mt-15">
                       <div class="col-md-4 whychoose-box">
                         <span class="whychoose-icon">
-                          <img alt="Wide range of Construction and monitoring services"
-                            src="img/flexible.png">
+                          <img alt="Wide range of Construction and monitoring services" src="img/flexible.png">
                         </span>
                         <aside class="whychoose-text">
                           <h5 class="margin-0">Flexible Pricing Models</h5>
@@ -1092,8 +691,7 @@
                       </div>
                       <div class="col-md-4 whychoose-box">
                         <span class="whychoose-icon">
-                          <img alt="Wide range of Construction and monitoring services"
-                            src="img/curbing.png">
+                          <img alt="Wide range of Construction and monitoring services" src="img/curbing.png">
                         </span>
                         <aside class="whychoose-text">
                           <h5 class="margin-0">Curbing Malpractices</h5>
@@ -1103,8 +701,7 @@
                       </div>
                       <div class="col-md-4 whychoose-box">
                         <span class="whychoose-icon">
-                          <img alt="Wide range of Construction and monitoring services"
-                            src="img/nocostruns.png">
+                          <img alt="Wide range of Construction and monitoring services" src="img/nocostruns.png">
                         </span>
                         <aside class="whychoose-text">
                           <h5 class="margin-0">No Cost Over Runs</h5>
@@ -1436,8 +1033,7 @@
 
       <!-- Modal content-->
 
-      <div class="modal-content"
-        style="background-image:url(img/back-bg.jpg);background-repeat: no-repeat;">
+      <div class="modal-content" style="background-image:url(img/back-bg.jpg);background-repeat: no-repeat;">
 
         <div class="modal-header" style="border-bottom: none;background-color: transparent;">
 
@@ -1771,6 +1367,38 @@
     new WOW.init();
   </script>
   <script src="js/bootstrap-multiselect.min.js"></script>
+
+  <script>
+    document.getElementById('bannerForm').addEventListener('submit', function (event) {
+      // Prevent the default form submission
+      event.preventDefault();
+
+      // Get form data
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const query = document.getElementById('query').value;
+
+      // Check if required fields are filled
+      if (!name || !phone || !email) {
+        alert('Please fill all required fields.');
+        return;
+      }
+
+      // Format the message with new lines
+      const message = `Name: ${name}%0A`
+        + `Phone: ${phone}%0A`
+        + `Email: ${email}%0A`
+        + `Query: ${query}`;
+
+      // Generate WhatsApp link (replace '1234567890' with the actual number)
+      const whatsappLink = `https://wa.me/7729052259?text=${message}`;
+
+      // Open WhatsApp link
+      window.open(whatsappLink, '_blank');
+      document.getElementById('bannerForm').reset();
+    });
+  </script>
 
 </body>
 
