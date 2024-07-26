@@ -391,33 +391,25 @@
                     </div>
                   </div>
                   <!-- TITLE END -->
-                  <form id="contactForm">
+                  <form method="POST" id="contactForm">
                     <div class="form-group">
-                      <input name="name" id="name" type="text" class="form-control" required placeholder="Name">
-                      <span class="errorname" style="color: red; display: none"> *Required Field (Name)</span>
-                    </div>
-
-                    <div class="form-group">
-                      <input name="email" id="email" type="email" class="form-control" required placeholder="Email">
-                      <span class="erroremail" style="color: red; display: none"> *Required Field (Email ID)</span>
+                      <input name="name" id="name" type="text" required class="form-control"
+                        placeholder="Name">
                     </div>
                     <div class="form-group">
-                      <input name="phone" id="phone" type="text" minlength="10" class="only-numeric10 form-control"
-                        data-toggle="modal" data-target="#national" required placeholder="Phone Number">
-                      <span class="errorphone" style="color: red; display: none"> *Required Field (Phone Number)</span>
-                      <span class="errorphone1" style="color: red; display: none">*Required Field (Please enter Country
-                        Code)</span>
+                      <input name="email" id="email" type="email" required class="form-control"
+                        placeholder="Email">
                     </div>
-
                     <div class="form-group">
-                      <textarea name="message" id="message" rows="4" class="form-control" required
+                      <input name="phone" id="phone" type="text" minlength="10" required
+                        class="only-numeric10 form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                      <textarea name="message" id="message" rows="4" required class="form-control "
                         placeholder="Message"></textarea>
-                      <span class="errormessage" style="color: red; display: none"> *Required Field (Message 10 to 200
-                        Characters)</span>
                     </div>
-
                     <div class="text-right">
-                      <button type="submit" class="site-button btn-effect">Submit</button>
+                      <button class="site-button btn-effect" type="Submit">Submit</button>
                     </div>
                   </form>
                 </div>
@@ -704,6 +696,38 @@
     new WOW.init();
   </script>
   <script src="js/bootstrap-multiselect.min.js"></script>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      // Prevent the default form submission
+      event.preventDefault();
+
+      // Get form data
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const query = document.getElementById('message').value;
+
+      // Check if required fields are filled
+      if (!name || !phone || !email) {
+        alert('Please fill all required fields.');
+        return;
+      }
+
+      // Format the message with new lines
+      const message = `Name: ${name}%0A`
+        + `Phone: ${phone}%0A`
+        + `Email: ${email}%0A`
+        + `Query: ${query}`;
+
+      // Generate WhatsApp link (replace '1234567890' with the actual number)
+      const whatsappLink = `https://wa.me/7729052259?text=${message}`;
+
+      // Open WhatsApp link
+      window.open(whatsappLink, '_blank');
+      document.getElementById('contactForm').reset();
+    });
+  </script>
 
 </body>
 

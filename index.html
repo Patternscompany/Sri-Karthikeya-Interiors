@@ -79,14 +79,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-  
+
             <!-- MAIN Vav -->
-  
-  
+
+
             <div class="header-nav navbar-collapse collapse ">
               <a href="index.html" class="desktop">
                 <img src="img/logo-light.png" alt="logo" class="logo-img" />
-  
+
               </a>
               <ul class="nav navbar-nav">
                 <!--<li class="active"><a href="">Home</a></li>-->
@@ -102,14 +102,14 @@
                         Residential Construction
                       </a>
                     </li>
-  
+
                     <li>
                       <a href="commersial.html">
                         <img alt="Service icon" src="img/building (1).png" />
                         Commercial Office
                       </a>
                     </li>
-  
+
                     <li>
                       <a href="project mmt.html">
                         <img alt="Service icon" src="img/project1.png" />
@@ -133,10 +133,10 @@
                 <li class="">
                   <a href="contactus.html">Contact us</a>
                 </li>
-  
+
               </ul>
             </div>
-  
+
             <script>
               function DropDown(el) {
                 this.dd = el;
@@ -146,7 +146,7 @@
                 this.index = -1;
                 this.initEvents();
               }
-  
+
               // function jquery(data){
               //     $.ajax({
               //         url: '/get_price',
@@ -158,7 +158,7 @@
               //         }
               //     });
               // }
-  
+
               function jquery(thi) {
                 var city = thi.getAttribute("value");
                 var baseurl = "https://www.wehouse.in/";
@@ -197,7 +197,7 @@
                 xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
                 xmlhttp.send();
               }
-  
+
               function popupjquery(city) {
                 var baseurl = "https://www.wehouse.in/";
                 //  alert(baseurl);
@@ -239,12 +239,12 @@
                 xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
                 xmlhttp.send();
               }
-  
+
               function pricetag(beforepopup, afterpopup) {
                 $(".before_popup").css("display", beforepopup);
                 $(".after_popup").css("display", afterpopup);
               }
-  
+
               function setSelectedValue(selectObj, valueToSet) {
                 for (var i = 0; i < selectObj.options.length; i++) {
                   if (selectObj.options[i].text == valueToSet) {
@@ -253,7 +253,7 @@
                   }
                 }
               }
-  
+
               function setservicecityprice(id, value) {
                 var obj = document.getElementById(id);
                 if (obj !== null) {
@@ -261,7 +261,7 @@
                 }
                 // alert(value);
               }
-  
+
               DropDown.prototype = {
                 initEvents: function () {
                   var obj = this;
@@ -290,7 +290,7 @@
                   return this.index;
                 },
               };
-  
+
               $(function () {
                 // create new variable for each menu
                 var dd1 = new DropDown($("#noble-gases"));
@@ -351,43 +351,32 @@
                   <span>Book a free Consultation</span><span class="fold bottom right"></span><span
                     class="fold bottom left"></span>
                 </div>
-                <form name="bannerform" id="bannerform" method="POST" autocomplete="on">
+                <form method="POST" id="bannerForm">
                   <div class="row">
                     <div class="form-group consult">
                       <label class="control-label">Name</label>
-                      <input type="text" name="name" id="name" placeholder="Name" required class="form-control" />
-                      <span class="errorname" style="color: red; display: none">*Required Field (Name)</span>
+                      <input type="text" name="name" id="name" required placeholder="Name" required class="form-control" />
                     </div>
-
                     <div class="form-group consult">
-                      <label class="control-label">Mobile</label>
-                      <input type="text" name="phone" id="phone" required placeholder="Contact Number"
-                        onkeypress="return isNumberKey(event);" minlength="10" data-toggle="modal"
-                        data-target="#national" class="form-control" />
-                      <span class="errorphone" style="color: red; display: none">*Required Field (Phone Number)</span>
-                      <span class="errorphone1" style="color: red; display: none">*Required Field (Please enter Country
-                        Code)</span>
+                      <label class="control-label">Phone</label>
+                      <input type="text" name="phone" id="phone" required placeholder="Name" required class="form-control" />
                     </div>
-
                     <div class="form-group consult">
                       <label class="control-label">Email</label>
-                      <input type="text" name="email" id="email" placeholder="Email" required class="form-control" />
-                      <span class="erroremail" style="color: red; display: none">*Required Field (Email)</span>
+                      <input type="text" name="email" id="email" required placeholder="Name" required class="form-control" />
                     </div>
                     <div class="form-group consult">
                       <label class="control-label">Enquiry Message</label>
-                      <textarea name="query" id="query" resize="none" class="form-control"
+                      <textarea name="query" required id="query" resize="none" class="form-control"
                         style="height: 40px"></textarea>
-                      <span class="errormobile" style="color: red; display: none">*Required Field (Mobile)</span>
                     </div>
-
-                    <div class="form-group text-center m-l20">
-                      <input type="submit" id="bannersubmit" name="bannersubmit"
-                        class="m-b20 m-t10 site-button btn-effect text-uppercase m-r25" />
+                    <div class="form-group consult">
+                      <button class="m-b20 m-t10 site-button btn-effect text-uppercase m-r25" type="submit">
+                        Submit
+                      </button>
                     </div>
                   </div>
-                </form>
-              </div>
+                </form></div>
             </div>
           </div>
         </div>
@@ -1398,150 +1387,6 @@
   </footer>
   <!-- FOOTER END -->
 
-  <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content" style="padding-bottom: 40px">
-        <div class="modal-header" style="padding: 5px 20px 0px 0px; border-bottom: none">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            x
-          </button>
-        </div>
-        <div class="modal-body">
-          <div style="padding: 0px 20px">
-            <div class="row">
-              <div class="col-md-12">
-                <h3 style="text-align: center; color: Green; margin-top: 0px">
-                  THANK YOU !
-                </h3>
-                <p style="text-align: center; color: Green; font-size: 15px">
-                  <b>Submitted Successfully</b> <br /><br />
-                  Congratulations on taking a big step. You are now one step
-                  closer to your ‘Dream Project’. One of our Key Team
-                  Members will assist you shortly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- MODAL -->
-
-  <!-- MODAL -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content" style="padding-bottom: 40px">
-        <div class="modal-header" style="padding: 5px 20px 0px 0px; border-bottom: none">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            x
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="" style="padding: 0px 20px">
-            <div class="row">
-              <div class="col-md-12">
-                <h3 style="text-align: center; color: Green; margin-top: 0px">
-                  THANK YOU !
-                </h3>
-                <p style="text-align: center; color: Green; font-size: 15px">
-                  <b>Submitted Successfully</b> <br /><br />
-                  Congratulations on taking a big step. You are now one step
-                  closer to your ‘Dream Project’. One of our Key Team
-                  Members will assist you shortly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL -->
-  <div id="with-form" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">
-            &times;
-          </button>
-          <h4 class="modal-title text-yellow text-center font-24">Quote</h4>
-        </div>
-        <div class="modal-body">
-          <form id="myformquote" name="myformquote" class="mb-lg" method="post"
-            action="https://www.wehouse.in/Home/getarequest">
-            <div class="form-group mt-lg">
-              <div class="row">
-                <div class="col-md-6">
-                  <label class="control-label">Name</label>
-                  <input name="namee" id="namee" class="form-control" placeholder="Type your name..." required
-                    type="text" />
-                  <span class="errornamee" style="color: red; display: none">
-                    *Required Field (Name)</span>
-                </div>
-                <div class="col-md-6">
-                  <label class="control-label">Mobile</label>
-                  <input name="phonee" id="phonee" minlength="10" class="only-numeric10 form-control"
-                    placeholder="Mobile Number" required type="text" />
-                  <span class="errorphonee" style="color: red; display: none">
-                    *Required Field (Phone Number)</span>
-                  <span class="errorphonee1" style="color: red; display: none">*Required Field (Please enter Country
-                    Code)</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="form-group col-md-12 p-a0">
-                <label class="control-label">Email</label>
-                <input name="emaile" id="emaile" class="form-control" placeholder="Type your email..." required
-                  type="email" />
-                <span class="erroremaile" style="color: red; display: none">
-                  *Required Field (Email ID)</span>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-group col-md-12 p-a0">
-                <label class="control-label">Select Service</label>
-                <select name="depts[]" id="depts" multiple="multiple">
-                  <option value="1">Residential Construction</option>
-                  <option value="2">Commercial Construction</option>
-                  <option value="5">Project Management</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="form-group col-md-12 p-a0">
-                <label class="control-label">Message</label>
-                <textarea rows="3" name="messagee" id="messagee" class="form-control" placeholder="Type your Message..."
-                  required></textarea>
-                <span class="errormessagee" style="color: red; display: none">
-                  *Required Field (Message 10 to 200 Characters)</span>
-              </div>
-            </div>
-
-            <div class="modal-footer">
-              <div class="form-group col-md-12 p-a0">
-                <input type="submit" id="submit" name="submit" class="site-button btn-effect text-uppercase m-r25" />
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- fixed Popup Enquiry -->
-
-
   <div class="quote-img">
     <a href="contactus.html" data-target="#with-form">
       <img class="quote-img-mobile" src="img/quote.png" alt="" />
@@ -1635,7 +1480,37 @@
   </script>
   <script src="js/bootstrap-multiselect.min.js"></script>
 
+  <script>
+    document.getElementById('bannerForm').addEventListener('submit', function (event) {
+      // Prevent the default form submission
+      event.preventDefault();
 
+      // Get form data
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const query = document.getElementById('query').value;
+
+      // Check if required fields are filled
+      if (!name || !phone || !email) {
+        alert('Please fill all required fields.');
+        return;
+      }
+
+      // Format the message with new lines
+      const message = `Name: ${name}%0A`
+        + `Phone: ${phone}%0A`
+        + `Email: ${email}%0A`
+        + `Query: ${query}`;
+
+      // Generate WhatsApp link (replace '1234567890' with the actual number)
+      const whatsappLink = `https://wa.me/7729052259?text=${message}`;
+
+      // Open WhatsApp link
+      window.open(whatsappLink, '_blank');
+      document.getElementById('bannerForm').reset();
+    });
+  </script>
 
 </body>
 
