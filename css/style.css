@@ -15923,6 +15923,13 @@ r .center-image {
 .carousel-inner > .item > img {
   line-height: 1;
   width: 100%;
+  height: 90vh;
+}
+@media (max-width:992px){
+  .carousel-inner > .item > a > img,
+.carousel-inner > .item > img{
+  height: 45vh;
+}
 }
 .carousel-control.left {
   background-image: -webkit-linear-gradient(
@@ -16388,7 +16395,7 @@ r .center-image {
 }
 @media (max-width: 992px) {
   .mobile_heading {
-    font-size: 15px;
+    font-size: 23px;
     font-weight: 800;
     margin: 0%;
     padding: 0%;

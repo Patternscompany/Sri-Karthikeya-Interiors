@@ -331,7 +331,8 @@
         <div class="carousel-inner" data-wow-delay="0.3s" role="listbox">
           <div class="item active">
 
-            <img class="onlydesktop mobile-view" src="img/img2.jpg" alt="..." />
+            <img class="onlydesktop mobile-view mobile-view-home" src="img/home-bg - Mobile.jpg" alt="..." />
+            <img class="onlydesktop mobile-view desktop-view-home" src="img/home-bg.png" alt="..." />
 
 
             <div class="container">
@@ -388,6 +389,20 @@
       <style>
         .contactUsForm{
           width: 100%;
+        }
+        .mobile-view-home{
+          display: none !important;
+        }
+        .desktop-view-home{
+          display: block !important;
+        }
+        @media (max-width:992px){
+          .mobile-view-home{
+            display: block !important;
+          }
+          .desktop-view-home{
+            display: none !important;
+          }
         }
       </style>
 
@@ -848,7 +863,7 @@
   <div class="clearfix"></div>
   <!-- CALL US SECTION START -->
 
-  <div class="section-full overlay-wraper bg-center bg-parallax bg-cover p-b20 p-t40 xs-hidden"
+  <div class="section-full overlay-wraper bg-center bg-parallax bg-cover p-b20 p-t40"
     style="background-color: #f5f5f5">
     <div class="container">
       <div class="sec-title text-center">
@@ -1136,7 +1151,7 @@
 
   <!-- CALL US SECTION END -->
   <div class="clearfix"></div>
-  <div class="section-full p-t10 p-b20 bg-white inner-page-padding xs-hidden">
+  <div class="section-full p-t10 p-b20 bg-white inner-page-padding">
     <!-- TITLE START -->
 
     <div class="p-b20">
@@ -1511,7 +1526,7 @@
         + `Query: ${query}`;
 
       // Generate WhatsApp link (replace '1234567890' with the actual number)
-      const whatsappLink = `https://wa.me/7729052259?text=${message}`;
+      const whatsappLink = `https://wa.me/9966790999?text=${message}`;
 
       // Open WhatsApp link
       window.open(whatsappLink, '_blank');
