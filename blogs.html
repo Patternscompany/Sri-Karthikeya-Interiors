@@ -64,97 +64,63 @@
     <!-- HEADER START -->
     <header class="site-header header-style-1">
       <div class="sticky-header main-bar-wraper">
-        <div class="main-bar bg-white">
+        <div class="main-bar">
           <div class="container">
-            <div class="logo-header">
+            <div class="logo-header d-block d-lg-none">
               <div class="logo-header-inner logo-header-one mobile">
                 <a href="index.html">
-                  <img src="img/logo-light.png" alt="" class="logo-img" />
+                  <img src="img/logo-light.png" alt="Logo" class="w-100" />
                 </a>
               </div>
             </div>
-            <!-- NAV Toggle Button -->
             <button data-target=".header-nav" data-toggle="collapse" type="button"
-              class="navbar-toggle collapsed second-button">
-              <div class="animated-icon2">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </div>
+              class="navbar-toggle collapsed second-button animated-icon2">
+              <!-- <span class="sr-only">Toggle navigation</span> -->
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-            <!-- ETRA Nav -->
-            <!-- <div class="extra-nav">
-                                <div class="extra-cell">                                            
-                                    <div data-toggle="modal" data-target="#login">
-                                        <i class="fa fa-user"></i>
-                                    </div>
-                                </div>
-                                <div class="extra-cell">                                            
-                                    <a href="tel:6305504248" data-toggle="tooltip" data-placement="bottom" title="Call Us">
-                                        <i class="fa fa-phone"></i>
-                                    </a>
-                                </div>
 
-                                <div class="extra-cell">                                            
-                                    <a href="mailto:info@hocomoco.in" data-toggle="tooltip" data-placement="bottom" title="Email">
-                                        <i class="fa fa-envelope"></i>
-                                    </a>
-                                </div>                             
-                            </div> -->
-            <!-- ETRA Nav -->
             <!-- MAIN Vav -->
 
 
-            <div class="header-nav navbar-collapse collapse">
+            <div class="header-nav navbar-collapse collapse ">
               <a href="index.html" class="desktop">
-                <img src="img/logo-light.png" alt="logo" class="logo-img" />
+                <img src="img/logo-light.png" alt="Sri Kartikeya Infra" class="logo-img" />
+
               </a>
               <ul class="nav navbar-nav">
                 <!--<li class="active"><a href="">Home</a></li>-->
                 <li class="active">
                   <a href="index.html">Home</a>
                 </li>
-                <!--<li><a href="javascript:;">Services</a>
-                                                        <ul class="sub-menu has-child">
-                                                                    <li><a href="residential-construction.html">
-                                                                        <i class="fa fa-home"></i> Residential Construction
-                                                                    </a></li>
-                                                                    <li><a href="#"><i class="fa fa-building" aria-hidden="true"></i> Commercial Construction</a></li>
-                                                                    <li><a href="#"><i class="fa fa-pencil-square" aria-hidden="true"></i> Project Management</a></li>
-                                                                    <li><a href="#"><i class="fa fa-sitemap" aria-hidden="true"></i> Architecture Services</a></li>
-                                                                    <li><a href="#"><i class="fa fa-houzz" aria-hidden="true"></i> Interiors & Smart Home</a></li>
-                                                        </ul>
-                                                    </li>-->
-                <!--<li class=""><a href="https://www.wehouse.in/company/about_us">About us</a></li>-->
                 <li class="submenu-toogle">
                   <a href="javascript:;">Services<span class="caret small_caret white"></span></a>
                   <ul class="sub-menu has-child">
                     <li>
-                      <a href="residental.html">
-                        <img alt="Service icon" src="https://www.wehouse.in/assets/icons/house.png" />
+                      <a href="residential.html">
+                        <img alt="Sri Kartikeya Infra Residential" src="img/house.png" />
                         Residential Construction
                       </a>
                     </li>
 
                     <li>
-                      <a href="commersial.html">
-                        <img alt="Service icon" src="https://www.wehouse.in/assets/icons/building.png" />
-                        Commercial Construction
+                      <a href="commercial.html">
+                        <img alt="Sri Kartikeya Infra Commercial" src="img/building (1).png" />
+                        Commercial Office
                       </a>
                     </li>
 
                     <li>
-                      <a href="project mmt.html">
-                        <img alt="Service icon" src="https://www.wehouse.in/assets/icons/project1.png" />
-                        project Management
+                      <a href="project-mmt.html">
+                        <img alt="Sri Karthikeya Project MMT" src="img/project1.png" />
+                        Project Management
                       </a>
                     </li>
-
                     <li>
-                      <a href="interiour.html">
-                        <img alt="Service icon" src="https://www.wehouse.in/assets/icons/interior.png" />
-                        interior & smart home
+                      <a href="construction-contracts.html">
+                        <img alt="Sri Kartikeya Construction Contract" src="img/Architect.png" />
+                        Construction Contracts
                       </a>
                     </li>
                   </ul>
@@ -163,29 +129,21 @@
                   <a href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="">
-                  <a href="careers.html">Careers</a>
-                </li>
-                <li class="">
                   <a href="aboutus.html">About Us</a>
                 </li>
                 <li class="">
-                  <a href="contactus.html">Contact us</a>
+                  <a href="contact-us.html">Contact us</a>
                 </li>
-                <!-- <li><a href="javascript:;"><i class="fa fa-user"></i></a>
-                                                        <ul class="sub-menu has-child">
-                                                                    <li><a href="profile.html">Profile</a></li>
-                                                                    <li><a href="#">Logout</a></li> 
-                                                        </ul> 
-                                                    </li> -->
+
               </ul>
             </div>
 
             <script>
               function DropDown(el) {
                 this.dd = el;
-                this.placeholder = this.dd.children('span');
-                this.opts = this.dd.find('ul.drop li');
-                this.val = '';
+                this.placeholder = this.dd.children("span");
+                this.opts = this.dd.find("ul.drop li");
+                this.val = "";
                 this.index = -1;
                 this.initEvents();
               }
@@ -203,10 +161,10 @@
               // }
 
               function jquery(thi) {
-                var city = thi.getAttribute('value');
+                var city = thi.getAttribute("value");
                 var baseurl = "https://www.wehouse.in/";
                 //  alert(baseurl);
-                var dat = 'city=' + city;
+                var dat = "city=" + city;
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function () {
                   if (this.readyState == 4 && this.status == 200) {
@@ -214,34 +172,37 @@
                     // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
                     setservicecityprice("dynamic_loc_amt", this.responseText);
                     setservicecityprice("service_selected_city", city);
-                    setservicecityprice("service-selected-price", this.responseText);
+                    setservicecityprice(
+                      "service-selected-price",
+                      this.responseText
+                    );
                     // document.getElementById("service_selected_city").innerHTML = city;
                     // setservicecityprice('service_selected_city',this.responseText);
                     var objSelect = document.getElementById("loc_select");
-                    var objSelect2 = document.getElementById("with-form-select1");
+                    var objSelect2 =
+                      document.getElementById("with-form-select1");
                     // alert(this.responseText);
-                    if (this.responseText == '0') {
-                      pricetag('none', 'block');
+                    if (this.responseText == "0") {
+                      pricetag("none", "block");
                     } else {
-                      pricetag('block', 'none');
+                      pricetag("block", "none");
                     }
                     //Set selected
                     setSelectedValue(objSelect, city);
-                    setSelectedValue(objSelect2, city)
-                    setservicecityprice('service-selected-city', city);
+                    setSelectedValue(objSelect2, city);
+                    setservicecityprice("service-selected-city", city);
                     // alert(this.responseText);
                   }
                 };
                 // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
                 xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
                 xmlhttp.send();
-
               }
 
               function popupjquery(city) {
                 var baseurl = "https://www.wehouse.in/";
                 //  alert(baseurl);
-                var dat = 'city=' + city;
+                var dat = "city=" + city;
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function () {
                   if (this.readyState == 4 && this.status == 200) {
@@ -249,23 +210,27 @@
                     // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
                     setservicecityprice("dynamic_loc_amt", this.responseText);
                     setservicecityprice("service_selected_city", city);
-                    setservicecityprice("service-selected-price", this.responseText);
+                    setservicecityprice(
+                      "service-selected-price",
+                      this.responseText
+                    );
                     // document.getElementById("service_selected_city").innerHTML = city;
                     // setservicecityprice('service_selected_city',this.responseText);
                     var objSelect = document.getElementById("loc_select");
-                    var objSelect2 = document.getElementById("with-form-select1");
-                    if (this.responseText == '0') {
-                      pricetag('none', 'block');
+                    var objSelect2 =
+                      document.getElementById("with-form-select1");
+                    if (this.responseText == "0") {
+                      pricetag("none", "block");
                     } else {
-                      pricetag('block', 'none');
+                      pricetag("block", "none");
                     }
                     //Set selected
                     setSelectedValue(objSelect, city);
-                    setSelectedValue(objSelect2, city)
-                    setservicecityprice('service-selected-city', city);
+                    setSelectedValue(objSelect2, city);
+                    setservicecityprice("service-selected-city", city);
                     // $('.menu-location').removeClass('selected');
-                    $('#popupcity_add').html(city);
-                    $('#myModal8').modal('toggle');
+                    $("#popupcity_add").html(city);
+                    $("#myModal8").modal("toggle");
                     // alert('city_'+city);
                     // $('.citypopup').fadeOut();
                     // alert(this.responseText);
@@ -274,12 +239,11 @@
                 // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
                 xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
                 xmlhttp.send();
-
               }
 
               function pricetag(beforepopup, afterpopup) {
-                $('.before_popup').css('display', beforepopup);
-                $('.after_popup').css('display', afterpopup);
+                $(".before_popup").css("display", beforepopup);
+                $(".after_popup").css("display", afterpopup);
               }
 
               function setSelectedValue(selectObj, valueToSet) {
@@ -302,35 +266,39 @@
               DropDown.prototype = {
                 initEvents: function () {
                   var obj = this;
-                  obj.dd.on('click', function (e) {
+                  obj.dd.on("click", function (e) {
                     e.preventDefault();
                     e.stopPropagation();
-                    $(this).toggleClass('active');
+                    $(this).toggleClass("active");
                   });
-                  obj.opts.on('click', function () {
-                    var opt = $(this);
-                    obj.val = opt.text();
-                    obj.index = opt.index();
-                    obj.placeholder.text(obj.val);
-                    opt.siblings().removeClass('selected');
-                    opt.filter(':contains("' + obj.val + '")').addClass('selected');
-                  }).change();
+                  obj.opts
+                    .on("click", function () {
+                      var opt = $(this);
+                      obj.val = opt.text();
+                      obj.index = opt.index();
+                      obj.placeholder.text(obj.val);
+                      opt.siblings().removeClass("selected");
+                      opt
+                        .filter(':contains("' + obj.val + '")')
+                        .addClass("selected");
+                    })
+                    .change();
                 },
                 getValue: function () {
                   return this.val;
                 },
                 getIndex: function () {
                   return this.index;
-                }
+                },
               };
 
               $(function () {
                 // create new variable for each menu
-                var dd1 = new DropDown($('#noble-gases'));
+                var dd1 = new DropDown($("#noble-gases"));
                 // var dd2 = new DropDown($('#other-gases'));
                 $(document).click(function () {
                   // close menu on document click
-                  $('.wrap-drop').removeClass('active');
+                  $(".wrap-drop").removeClass("active");
                 });
               });
             </script>
@@ -743,18 +711,18 @@
               <ul class="social-icons mt-social-links" style="margin-top: 20px">
                 <!-- <li><a href="javascript:void(0);" class="fa fa-google"></a></li>  -->
                 <li>
-                  <a href="https://www.facebook.com/srikartikeyaconstructions/" target="_blank"
+                  <a href="https://www.facebook.com/profile.php?id=61563397469375" target="_blank"
                     class="fa fa-facebook"></a>
                 </li>
                 <li>
-                  <a href="" target="_blank" class="fa fa-twitter"></a>
+                  <a href="https://x.com/skartikeyainfra" target="_blank" class="fa fa-twitter"></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/srikartikeyaconstructions/" target="_blank"
+                  <a href="https://www.instagram.com/kartikeyainfra/" target="_blank"
                     class="fa fa-instagram"></a>
                 </li>
                 <li>
-                  <a href="" target="_blank" class="fa fa-linkedin"></a>
+                  <a href="https://www.linkedin.com/company/srikartikeya-infra" target="_blank" class="fa fa-linkedin"></a>
                 </li>
               </ul>
             </div>
@@ -773,7 +741,7 @@
                   <a href="portfolio.html">Portfolio</a>
                 </li>
                 <li>
-                  <a href="contactus.html">Contact Us</a>
+                  <a href="contact-us.html">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -785,16 +753,16 @@
               <h4 class="widget-title">Our Services</h4>
               <ul>
                 <li>
-                  <a href="residental.html">Residential Construction</a>
+                  <a href="residential.html">Residential Construction</a>
                 </li>
                 <li>
-                  <a href="commersial.html">Commercial Office</a>
+                  <a href="commercial.html">Commercial Office</a>
                 </li>
                 <li>
-                  <a href="project mmt.html">Project Management</a>
+                  <a href="project-mmt.html">Project Management</a>
                 </li>
                 <li>
-                  <a href="cons-contact.html">Construction Contracts</a>
+                  <a href="construction-contracts.html">Construction Contracts</a>
                 </li>
               </ul>
             </div>
@@ -806,10 +774,9 @@
               <ul class="widget_address">
                 <p>Madinaguda, Hyderabad, Telangana - 500049.</p>
                 <li>
-                  (+91) 99667 90999
-
+                  +91-99667 90999
                 </li>
-                +(91) 9948 33 3143
+                <li>+91-9948 33 3143</li>
               </ul>
             </div>
           </div>
@@ -834,44 +801,42 @@
                   <a href="" target="_blank">The Patterns Company</a>.</span>
               </div>
             </div>
+
+            <!-- <div class="col-md-5 last-footersec p-l0">
+              <div class="col-md-2"></div>
+              <div class="col-md-3 col-xs-6 p-l0 p-r0">
+                <span class="copyrights-text"><a href="https://www.wehouse.in/privacy-policy">Privacy Policy</a></span>
+              </div>
+              <div class="col-md-4 col-xs-6 p-l0 p-r0">
+                <span class="copyrights-text"><a href="https://www.wehouse.in/terms-condtions">Terms &
+                    Conditions</a></span>
+              </div>
+              <div class="col-md-2"></div> -->
           </div>
         </div>
       </div>
     </div>
+    </div>
   </footer>
   <!-- FOOTER END -->
-
-
-  <ul id="social-sidebar">
-
+  <ul id="social-sidebar" class="social-icons-mobile">
     <li>
-
-      <a href="https://www.facebook.com/wehouse.homeconstruction" target="_blank"
+      <a href="https://www.facebook.com/profile.php?id=61563397469375" target="_blank"
         class="fa fa-facebook"><span>Facebook</span></a>
-
     </li>
 
     <li>
-
-      <a href="https://twitter.com/wehouse_in" target="_blank" class="fa fa-twitter"><span>Twitter</span></a>
-
-    </li>
-
-
-
-    <li>
-
-      <a href="https://instagram.com/wehouse.in" target="_blank" class="fa fa-instagram"><span>Instagram</span></a>
-
+      <a href="https://x.com/skartikeyainfra" target="_blank" class="fa fa-twitter"><span>Twitter</span></a>
     </li>
 
     <li>
-
-      <a href="https://www.linkedin.com/company/wehousehomeconstruction" target="_blank"
-        class="fa fa-linkedin"><span>Linkedin</span></a>
-
+      <a href="https://www.instagram.com/kartikeyainfra/" target="_blank"
+        class="fa fa-instagram"><span>Instagram</span></a>
     </li>
 
+    <li>
+      <a href="https://www.linkedin.com/company/srikartikeya-infra" target="_blank" class="fa fa-linkedin"><span>Linkedin</span></a>
+    </li>
   </ul>
 
   <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span>
