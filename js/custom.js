@@ -158,19 +158,19 @@
           e(this).parent().addClass("acc-actives"),
           e(this).parents(".acod-head").attr("class");
       }),
-      jQuery(".sub-menu").parent("li").addClass("has-child"),
-      jQuery(".mega-menu").parent("li").addClass("has-child"),
-      jQuery(
-        "<div class='fa fa-close submenu-toogle'>--</div>"
-      ).insertAfter(".has-child > a"),
-      jQuery(".has-child a+.submenu-toogle").on("click", function (e) {
-        jQuery(this)
-          .next(jQuery(".sub-menu"))
-          .slideToggle("fast", function () {
-            jQuery(this).parent().toggleClass("nav-active");
-          }),
-          e.stopPropagation();
-      }),
+      // jQuery(".sub-menu").parent("li").addClass("has-child"),
+      // jQuery(".mega-menu").parent("li").addClass("has-child"),
+      // jQuery(
+      //   "<div class='fa fa-close submenu-toogle'>--</div>"
+      // ).insertAfter(".has-child > a"),
+      // jQuery(".has-child a+.submenu-toogle").on("click", function (e) {
+      //   jQuery(this)
+      //     .next(jQuery(".sub-menu"))
+      //     .slideToggle("fast", function () {
+      //       jQuery(this).parent().toggleClass("nav-active");
+      //     }),
+      //     e.stopPropagation();
+      // }),
       jQuery(".testimonial-home").owlCarousel({
         loop: !0,
         autoplay: !0,
@@ -500,4 +500,11 @@
         !1
       );
     });
+    const $btn = $(".fa-angle-down");
+const $submenu = $(".header-nav .nav > li .sub-menu");
+
+$btn.on("click", function() {
+  $submenu.toggleClass("active");
+  $btn.toggleClass("fa-angle-up fa-angle-down");
+});
 })(window.jQuery);
