@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- META -->
+  <meta charset="utf-8" />
+
+  <!-- FAVICONS ICON -->
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+  <!-- PAGE TITLE HERE -->
+  <title>Sri Karthikeya Infra & Interiors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.min.css">
+  <link rel="stylesheet" type="text/css" href="css/wizard.css">
+  <link rel="stylesheet" type="text/css" href="css/loader.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css">
+  <link rel="stylesheet" type="text/css" href="css/switcher.css">
+  <link rel="stylesheet" type="text/css" href="css/skin-1.css">
+  <link rel="stylesheet" type="text/css" href="css/flaticon.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" />
+
+  <!-- MAIN STYLE SHEET -->
+  <link href="css/style.css" rel="stylesheet" />
+
+
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <script src="js/jquery.validate.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/35f3e4fe0e.js" crossorigin="anonymous"></script>
+
+  <script>
+    window.addEventListener("load", function () {
+      jQuery('[href*="tel"]').click(function () {
+        gtag("event", "conversion", {
+          send_to: "AW-767771084/pwLRCJje_9ACEMyDje4C",
+        });
+      });
+    });
+  </script>
+  <!-- Start of HubSpot Embed Code -->
+  <script id="hs-script-loader" async defer src="//js.hs-scripts.com/20348301.js"></script>
+  <!-- End of HubSpot Embed Code -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+</head>
+
+<body>
+
+  <div class="page-wraper">
+
+    <!-- HEADER START -->
+
+    <header class="site-header header-style-1">
+      <div class="sticky-header main-bar-wraper">
+        <div class="main-bar">
+          <div class="container">
+            <div class="logo-header d-block d-lg-none">
+              <div class="logo-header-one mobile">
+                <a href="index.html">
+                  <img src="img/logo-light.png" alt="Logo" class="w-100" />
+                </a>
+              </div>
+            </div>
+            <button data-target=".header-nav" data-toggle="collapse" type="button"
+              class="navbar-toggle collapsed second-button animated-icon2">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <!-- MAIN Vav -->
+
+
+            <div class="header-nav navbar-collapse collapse ">
+              <a href="index.html" class="desktop">
+                <img src="img/logo-light.png" alt="logo" class="logo-img" />
+
+              </a>
+              <ul class="nav navbar-nav">
+                <li class="">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="submenu-toogle active">
+                  <a href="javascript:;">Services<span class="caret small_caret white"></span></a>
+                  <ul class="sub-menu has-child">
+                    <li>
+                      <a href="residental.html">
+                        <img alt="Service icon" src="img/house.png" />
+                        Residential Construction
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="commersial.html">
+                        <img alt="Service icon" src="img/building (1).png" />
+                        Commercial Office
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="project mmt.html">
+                        <img alt="Service icon" src="img/project1.png" />
+                        Project Management
+                      </a>
+                    </li>
+                    <li>
+                      <a href="cons-contact.html">
+                        <img alt="Service icon" src="img/Architect.png" />
+                        Construction Contracts
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="">
+                  <a href="aboutus.html">About Us</a>
+                </li>
+                <li class="">
+                  <a href="contactus.html">Contact us</a>
+                </li>
+              </ul>
+            </div>
+
+            <script>
+              function DropDown(el) {
+                this.dd = el;
+                this.placeholder = this.dd.children("span");
+                this.opts = this.dd.find("ul.drop li");
+                this.val = "";
+                this.index = -1;
+                this.initEvents();
+              }
+
+              function jquery(thi) {
+                var city = thi.getAttribute("value");
+                var baseurl = "https://www.wehouse.in/";
+                //  alert(baseurl);
+                var dat = "city=" + city;
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                    // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                    // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                    setservicecityprice("dynamic_loc_amt", this.responseText);
+                    setservicecityprice("service_selected_city", city);
+                    setservicecityprice(
+                      "service-selected-price",
+                      this.responseText
+                    );
+                    // document.getElementById("service_selected_city").innerHTML = city;
+                    // setservicecityprice('service_selected_city',this.responseText);
+                    var objSelect = document.getElementById("loc_select");
+                    var objSelect2 =
+                      document.getElementById("with-form-select1");
+                    // alert(this.responseText);
+                    if (this.responseText == "0") {
+                      pricetag("none", "block");
+                    } else {
+                      pricetag("block", "none");
+                    }
+                    //Set selected
+                    setSelectedValue(objSelect, city);
+                    setSelectedValue(objSelect2, city);
+                    setservicecityprice("service-selected-city", city);
+                    // alert(this.responseText);
+                  }
+                };
+                // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+                xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
+                xmlhttp.send();
+              }
+
+              function popupjquery(city) {
+                var baseurl = "https://www.wehouse.in/";
+                //  alert(baseurl);
+                var dat = "city=" + city;
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                    // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                    // document.getElementById("dynamic_loc_amt").innerHTML = this.responseText;
+                    setservicecityprice("dynamic_loc_amt", this.responseText);
+                    setservicecityprice("service_selected_city", city);
+                    setservicecityprice(
+                      "service-selected-price",
+                      this.responseText
+                    );
+                    // document.getElementById("service_selected_city").innerHTML = city;
+                    // setservicecityprice('service_selected_city',this.responseText);
+                    var objSelect = document.getElementById("loc_select");
+                    var objSelect2 =
+                      document.getElementById("with-form-select1");
+                    if (this.responseText == "0") {
+                      pricetag("none", "block");
+                    } else {
+                      pricetag("block", "none");
+                    }
+                    //Set selected
+                    setSelectedValue(objSelect, city);
+                    setSelectedValue(objSelect2, city);
+                    setservicecityprice("service-selected-city", city);
+                    // $('.menu-location').removeClass('selected');
+                    $("#popupcity_add").html(city);
+                    $("#myModal8").modal("toggle");
+                    // alert('city_'+city);
+                    // $('.citypopup').fadeOut();
+                    // alert(this.responseText);
+                  }
+                };
+                // xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+                xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
+                xmlhttp.send();
+              }
+
+              function pricetag(beforepopup, afterpopup) {
+                $(".before_popup").css("display", beforepopup);
+                $(".after_popup").css("display", afterpopup);
+              }
+
+              function setSelectedValue(selectObj, valueToSet) {
+                for (var i = 0; i < selectObj.options.length; i++) {
+                  if (selectObj.options[i].text == valueToSet) {
+                    selectObj.options[i].selected = true;
+                    return;
+                  }
+                }
+              }
+
+              function setservicecityprice(id, value) {
+                var obj = document.getElementById(id);
+                if (obj !== null) {
+                  obj.innerHTML = value;
+                }
+                // alert(value);
+              }
+
+              DropDown.prototype = {
+                initEvents: function () {
+                  var obj = this;
+                  obj.dd.on("click", function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $(this).toggleClass("active");
+                  });
+                  obj.opts
+                    .on("click", function () {
+                      var opt = $(this);
+                      obj.val = opt.text();
+                      obj.index = opt.index();
+                      obj.placeholder.text(obj.val);
+                      opt.siblings().removeClass("selected");
+                      opt
+                        .filter(':contains("' + obj.val + '")')
+                        .addClass("selected");
+                    })
+                    .change();
+                },
+                getValue: function () {
+                  return this.val;
+                },
+                getIndex: function () {
+                  return this.index;
+                },
+              };
+
+              $(function () {
+                // create new variable for each menu
+                var dd1 = new DropDown($("#noble-gases"));
+                // var dd2 = new DropDown($('#other-gases'));
+                $(document).click(function () {
+                  // close menu on document click
+                  $(".wrap-drop").removeClass("active");
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+
+    <div class="page-content">
+
+      <!-- INNER PAGE BANNER -->
+
+      <div class="mt-bnr-inr1 overlay-wraper bg-top-center"
+        style="background-image:url(https://www.wehouse.in/assets/slider/Residential-Aug2022.jpg); background-repeat:no-repeat;background-position:top center;">
+        <div class="overlay-main bg-black opacity-05"></div>
+        <div class="container">
+          <div class="row">
+            <div class="banner-title-outer">
+              <div class="banner-title-name">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 m-t115">
+                  <div class="bg-bottom-right">
+                    <!-- style="background-image:url(img/construction1.jpg);" -->
+                    <div class="text-white">
+                      <h1 class="mt-tilte1 m-t0 font-30 text-center">Construction Contracts </h1>
+                    </div>
+                    <!--<div class="p-t10 p-b30 text-center xs-hidden" id="get-align"> <a href="#requestsubmit" class="site-button btn-effect"><span> Get Started</span></a>-->
+                    <div>
+                      <ul class="mt-breadcrumb breadcrumb-style-2 text-center">
+                        <li><a href="index.html">Home</a></li>
+                        <li> Construction Contracts</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="">
+
+      <div class="mt-tabs bg-tabs xs-hidden text-center">
+        <ul class="nav nav-tabs" style="display: inline-block;">
+          <li class="active" style="cursor: pointer;"><a data-toggle="" href="#requestsubmit">Submit Your Request</a>
+          </li>
+          <li><a data-toggle="" href="#howitworks">How it works</a>
+          </li>
+          <li><a data-toggle="" href="#portfolio">portfolio</a>
+          </li>
+          <li><a data-toggle="" href="#whychoose">Why Choose Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-content">
+
+        <div class="row">
+
+          <div class="col-md-12">
+
+
+            <div class="m-b10">
+
+              <!-- TAB DEFAULT WITH NAV BG -->
+
+
+
+              <div class="mt-tabs bg-tabs">
+
+                <div class="">
+                  <div class="tab-content">
+
+                    <div id="requestsubmit" class="active">
+                      <div class="sumbit-bg">
+                        <div class="p-t20">
+
+                          <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 for_shadow">
+                            <div
+                              class="col-sm-12 form-section section-full square_shape1 square_shape2 bg-parallax bg-cover">
+                              <div class="">
+                                <div class="">
+                                  <div class="sec-title text-center">
+                                    <h2 class="text-uppercase sep-line-one "> Submit your Request</h2>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- TITLE END -->
+                              <form method="POST" id="bannerForm">
+                                <div class="row">
+                                  <div class="form-group consult">
+                                    <label class="control-label">Name</label>
+                                    <input type="text" name="name" id="name" required placeholder="Name" required
+                                      class="form-control" />
+                                  </div>
+                                  <div class="form-group consult">
+                                    <label class="control-label">Phone</label>
+                                    <input type="text" name="phone" id="phone" required placeholder="Name" required
+                                      class="form-control" />
+                                  </div>
+                                  <div class="form-group consult">
+                                    <label class="control-label">Email</label>
+                                    <input type="text" name="email" id="email" required placeholder="Name" required
+                                      class="form-control" />
+                                  </div>
+                                  <div class="form-group consult">
+                                    <label class="control-label">Enquiry Message</label>
+                                    <textarea name="query" required id="query" resize="none" class="form-control"
+                                      style="height: 40px"></textarea>
+                                  </div>
+                                  <div class="form-group consult">
+                                    <button class="m-b20 m-t10 site-button btn-effect text-uppercase m-r25"
+                                      type="submit">
+                                      Submit
+                                    </button>
+                                  </div>
+                                </div>
+                              </form>
+
+
+                              <!-- wizard container -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="clearfix"></div>
+          <div id="portfolio" class="">
+            <!-- GALLERY CONTENT START -->
+            <div class="section-full p-t20 p-b30 square_shape1 bg-parallax bg-cover" data-stellar-background-ratio="0.5"
+              style="background-color:#f5f5f5;">
+              <div class="container">
+                <!-- TITLE START -->
+                <div class="p-b20">
+                  <div class="">
+                    <div class="sec-title text-center">
+                      <h2 class="text-uppercase sep-line-one text-black">Our Portfolio</h2>
+                    </div>
+                  </div>
+                </div>
+                <!-- TITLE END -->
+                <div class="portfolio-wrap mfp-gallery work-grid row clearfix ">
+                  <div id="ajax_table"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="flex-center text-center">
+                  <a href="portfolio.html"> <button class="btn site-button btn-effect btn-wd" id="load_more "
+                      data-val="0">View All</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <div id="howitworks" class="">
+            <div class="p-t20 p-b30">
+              <div class="m-service-containt text-black">
+                <div class="container">
+                  <!-- TITLE START -->
+                  <div class="">
+                    <div class="">
+                      <div class="sec-title text-center">
+                        <h2 class="text-uppercase sep-line-one ">How It Works</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- TITLE END -->
+                  <!-- IMAGE CAROUSEL START -->
+                  <div class="p-t10">
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6 how-works">
+                        <div class="mt-icon-box-wraper m-b30">
+                          <div class="relative icon-count-2 p-t30"> <span class="icon-count-number p-l50 p-r20">1</span>
+                            <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
+                                class="icon-cell"><img src="img/requirement1.png" alt=""></span>
+                            </div>
+                            <div class="icon-content center p-t10 p-b0 p-l10 p-r10">
+                              <h4 class="mt-tilte m-b25 text-center">Your Requirement</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 how-works">
+                        <div class="mt-icon-box-wraper m-b30">
+                          <div class="relative icon-count-2 p-t30"> <span class="icon-count-number p-l50 p-r20">2</span>
+                            <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
+                                class="icon-cell"><img src="img/costestimate1.png" alt=""></span>
+                            </div>
+                            <div class="icon-content p-t10 p-b0 p-l10 p-r10">
+                              <h4 class="mt-tilte m-b25 text-center">Cost Estimation</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 how-works">
+                        <div class="mt-icon-box-wraper m-b30">
+                          <div class="relative icon-count-2 p-t30"> <span
+                              class="icon-count-number  p-l50 p-r20">3</span>
+                            <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
+                                class="icon-cell"><img src="img/schedule1.png" alt=""></span>
+                            </div>
+                            <div class="icon-content center p-t10 p-b0 p-l10 p-r10">
+                              <h4 class="mt-tilte m-b25 text-center">Schedule Visit</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 how-works">
+                        <div class="mt-icon-box-wraper m-b30">
+                          <div class="relative icon-count-2 p-t30"> <span
+                              class="icon-count-number  p-l50 p-r20">4</span>
+                            <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
+                                class="icon-cell"><img src="img/excute1.png" alt=""></span>
+                            </div>
+                            <div class="icon-content p-t10 p-b0 p-l10 p-r10">
+                              <h4 class="mt-tilte m-b25 text-center">Work Execution</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 how-works">
+                        <div class="mt-icon-box-wraper m-b30">
+                          <div class="relative icon-count-2 p-t30"> <span
+                              class="icon-count-number  p-l50 p-r20">5</span>
+                            <div class="icon-md inline-icon m-b15 p-l40 p-r30 text-primary scale-in-center"> <span
+                                class="icon-cell"><img src="img/architecture1.png" alt=""></span>
+                            </div>
+                            <div class="icon-content p-t10 p-b0 p-l10 p-r10">
+                              <h4 class="mt-tilte m-b25 text-center">Satisfied Delivery</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div id="whychoose" style="background-color: #f5f5f5;">
+            <div class="section-content container">
+              <div class="row">
+                <!-- TITLE START -->
+                <div class="">
+                  <div class="">
+                    <div class="sec-title text-center">
+                      <h2 class="text-uppercase sep-line-one ">Why Choose Us</h2>
+                    </div>
+                  </div>
+                </div>
+                <!-- TITLE END -->
+                <div class="section-full p-t20 p-b20 overlay-wraper bg-center bg-parallax bg-cover"
+                  data-stellar-background-ratio="0.5">
+                  <div class="overlay-main opacity-05"></div>
+                  <div class="row-pb-md">
+                    <div class="col-md-12">
+
+                      <div class="col-md-4 whychoose-box">
+                        <span class="whychoose-icon">
+                          <img alt="Integrated Home construction and monitoring services"
+                            src="img/professional-service-icon-min.png">
+                        </span>
+                        <aside class="whychoose-text">
+                          <h5 class="margin-0">Professional Service</h5>
+                          <p class="text-left font-light">‘Best in class’ service ensured with our experienced in-house
+                            Design & Construction team. Complete Hassle-free Experience from beginning to end. </p>
+                        </aside>
+                      </div>
+                      <div class="col-md-4 whychoose-box">
+                        <span class="whychoose-icon">
+                          <img alt="Wide range of Construction and monitoring services"
+                            src="img/insured-work-icon-min.png">
+                        </span>
+                        <aside class="whychoose-text">
+                          <h5 class="margin-0">Insured Work</h5>
+                          <p class="text-left font-light">Your Structure is insured with us. Any issue- post
+                            construction, no need to worry. We have your back; we are always available at a click/call
+                            away. </p>
+                        </aside>
+                      </div>
+                      <div class="col-md-4 whychoose-box">
+                        <span class="whychoose-icon">
+                          <img alt="Integrated Home construction and monitoring services"
+                            src="img/digital-tracking-icon-min.png">
+                        </span>
+                        <aside class="whychoose-text">
+                          <h5 class="margin-0">100% transparency </h5>
+                          <p class="text-left font-light">No Hidden Charges, Every detail is as clear as a crystal. To
+                            bring in transparency is one of our core purposes of existence. </p>
+                        </aside>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mt-15">
+                      <div class="col-md-4 whychoose-box">
+                        <span class="whychoose-icon">
+                          <img alt="End to End Construction Services" src="img/transparency-icon-min.png">
+                        </span>
+                        <aside class="whychoose-text">
+                          <h5 class="margin-0">Digital Tracking</h5>
+                          <p class="text-left font-light">You can now digitally track your work progress, with a simple
+                            login you are empowered to control and track every inch of your work site. </p>
+                        </aside>
+                      </div>
+                      <div class="col-md-4 whychoose-box">
+                        <span class="whychoose-icon">
+                          <img alt="Integrated Home construction and monitoring services"
+                            src="img/quality-assurance-icon-min.png">
+                        </span>
+                        <aside class="whychoose-text">
+                          <h5 class="margin-0">Quality Assurance</h5>
+                          <p class="text-left font-light">Be ensured with us that you have the ‘right quality for the
+                            right price’. No more over charging and no more substandard products.</p>
+                        </aside>
+                      </div>
+                      <div class="col-md-4 whychoose-box">
+                        <span class="whychoose-icon">
+                          <img alt="Wide range of Construction and monitoring services"
+                            src="img/on-time-delivery-icon.png">
+                        </span>
+                        <aside class="whychoose-text">
+                          <h5 class="margin-0">On time Delivery</h5>
+                          <p class="text-left font-light">Missing deadline? Not in our dictionary, we are ‘on time every
+                            time’. We will ensure ‘on time delivery’ thus ensuring that there are no cost over runs.
+                          </p>
+                        </aside>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mt-15">
+                      <div class="col-md-4 whychoose-box">
+                        <span class="whychoose-icon">
+                          <img alt="Wide range of Construction and monitoring services" src="img/flexible.png">
+                        </span>
+                        <aside class="whychoose-text">
+                          <h5 class="margin-0">Flexible Pricing Models</h5>
+                          <p class="text-left font-light">Quotes that are tailored fit to your choice. Not happy with
+                            rigid pricing models, we understand your frustration. With us, you can customize as per your
+                            convenience. </p>
+                        </aside>
+                      </div>
+                      <div class="col-md-4 whychoose-box">
+                        <span class="whychoose-icon">
+                          <img alt="Wide range of Construction and monitoring services" src="img/curbing.png">
+                        </span>
+                        <aside class="whychoose-text">
+                          <h5 class="margin-0">Curbing Malpractices</h5>
+                          <p class="text-left font-light">We have put a check on Malpractices. With our new age
+                            technology assistance, we have curbed all the Fraudulent practices. </p>
+                        </aside>
+                      </div>
+                      <div class="col-md-4 whychoose-box">
+                        <span class="whychoose-icon">
+                          <img alt="Wide range of Construction and monitoring services" src="img/nocostruns.png">
+                        </span>
+                        <aside class="whychoose-text">
+                          <h5 class="margin-0">No Cost Over Runs</h5>
+                          <p class="text-left font-light">Once we finalize on a Quote, there is no going back. We
+                            promise you a 100% No Cost Overrun Policy. </p>
+                        </aside>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+      <!-- INNER PAGE BANNER END -->
+
+    </div>
+    <div class="clearfix"></div>
+    <!-- CONTENT END -->
+    <!-- SECTION CONTENT START -->
+    <div class="section-full p-b40 bg-white inner-page-padding">
+      <!-- TITLE START -->
+      <!-- TITLE START -->
+      <div class="">
+        <div class="">
+          <div class="sec-title text-center">
+            <h2 class="text-uppercase sep-line-one"> Blogs</h2>
+          </div>
+        </div>
+      </div>
+      <!-- TITLE END -->
+      <!-- TITLE END -->
+      <!-- GALLERY CONTENT START -->
+      <div class="container">
+        <div class="portfolio-wrap1 mfp-gallery news-grid clearfix row ">
+          <!-- COLUMNS 1 -->
+          <div class="masonry-item1  col-lg-4 col-md-4 col-sm-12">
+            <div class="blog-post blog-grid date-style-2">
+              <div class="blog2">
+                <a href="blogs.html">
+                  <div class="video-section-full bg-no-repeat bg-cover overlay-wraper m-b30"
+                    style="background-image:url(img/civil.jpg)">
+                    <div class="overlay-main bg-black opacity-06"></div>
+                    <div class="video-section-inner">
+                      <div class="video-section-content">
+                        <div class="blog-content">
+                          <a href="blogs.html" class="font-weight-600 text-uppercase">
+                            Best Construction Company in hyderabad to Build Your House | kartikeya </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="mt-post-info ">
+                <div class="m-about-years bg-moving">
+                  <div class="clearfix">
+                    <div class="mt-post-readmore pull-left"> <a href="blogs.html" title="Read More" rel="bookmark"
+                        class="site-button-link">Read More
+
+                        <i class="fa fa-arrow-circle-o-right arrow-animation"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item1  col-lg-4 col-md-4 col-sm-12">
+            <div class="blog-post blog-grid date-style-2">
+              <div class="blog2">
+                <a href="blogs.html">
+                  <div class="video-section-full bg-no-repeat bg-cover overlay-wraper m-b30"
+                    style="background-image:url(img/proimg1.webp)">
+                    <div class="overlay-main bg-black opacity-06"></div>
+                    <div class="video-section-inner">
+                      <div class="video-section-content">
+                        <div class="blog-content">
+                          <a href="blogs.html" class="font-weight-600 text-uppercase">
+                            Design Trends in Home Construction | kartikeya! </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="mt-post-info ">
+                <div class="m-about-years bg-moving">
+                  <div class="clearfix">
+                    <div class="mt-post-readmore pull-left"> <a href="blogs.html" title="Read More" rel="bookmark"
+                        class="site-button-link">Read More
+
+                        <i class="fa fa-arrow-circle-o-right arrow-animation"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-item1  col-lg-4 col-md-4 col-sm-12">
+            <div class="blog-post blog-grid date-style-2">
+              <div class="blog2">
+                <a href="blogs.html">
+                  <div class="video-section-full bg-no-repeat bg-cover overlay-wraper m-b30"
+                    style="background-image:url(img/home.webp)">
+                    <div class="overlay-main bg-black opacity-06"></div>
+                    <div class="video-section-inner">
+                      <div class="video-section-content">
+                        <div class="blog-content">
+                          <a href="blogs.html" class="font-weight-600 text-uppercase">
+                            Home Automation Services | kartikeya </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="mt-post-info ">
+                <div class="m-about-years bg-moving">
+                  <div class="clearfix">
+                    <div class="mt-post-readmore pull-left"> <a href="blogs.html" title="Read More" rel="bookmark"
+                        class="site-button-link">Read More
+
+                        <i class="fa fa-arrow-circle-o-right arrow-animation"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="masonry-item1  col-lg-3 col-md-3 col-sm-6">
+              <div class="blog-post blog-grid date-style-2">
+                <div class="blog2">
+                  <a href="blogs.html">
+                    <div class="video-section-full bg-no-repeat bg-cover overlay-wraper m-b30"
+                      style="background-image:url(img/interiour.webp)">
+                      <div class="overlay-main bg-black opacity-06"></div>
+                      <div class="video-section-inner">
+                        <div class="video-section-content">
+                          <div class="blog-content">
+                            <a href="blogs.html" class="font-weight-600 text-uppercase">
+                              Home Interior Design | kartikeya </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="mt-post-info ">
+                  <div class="m-about-years bg-moving">
+                    <div class="clearfix">
+                      <div class="mt-post-readmore pull-left"> <a href="blogs.html" title="Read More" rel="bookmark"
+                          class="site-button-link">Read More
+  
+                          <i class="fa fa-arrow-circle-o-right arrow-animation"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          <!-- COLUMNS 2 -->
+        </div>
+      </div>
+      <!-- GALLERY CONTENT END -->
+    </div>
+    <!-- SECTION CONTENT END  -->
+    <!-- FOOTER START -->
+    <footer class="site-footer footer-large footer-dark footer-wide">
+      <!-- FOOTER BLOCKES START -->
+      <div class="footer-top overlay-wraper">
+        <div class="overlay-main"></div>
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT COMPANY -->
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="widget widget_about">
+                <!--<h4 class="widget-title">About Company</h4>-->
+                <div class="logo-footer clearfix p-b15">
+                  <a href="index.html"><img src="img/logo-light.png" alt="" /></a>
+                </div>
+                <!-- <p class="max-w400 p-t20">Today we can tell you, thanks to your passion, hard work creativity, and expertise, you delivered us the most beautiful house great looks.</p>  -->
+
+                <ul class="social-icons mt-social-links" style="margin-top: 20px">
+                  <!-- <li><a href="javascript:void(0);" class="fa fa-google"></a></li>  -->
+                  <li>
+                    <a href="https://www.facebook.com/srikartikeyaconstructions/" target="_blank"
+                      class="fa fa-facebook"></a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank" class="fa fa-twitter"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/srikartikeyaconstructions/" target="_blank"
+                      class="fa fa-instagram"></a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank" class="fa fa-linkedin"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- USEFUL LINKS -->
+            <div class="col-lg-3 col-md-6 col-xs-12 footer-col-3 mobile-footer">
+              <div class="widget widget_services inline-links">
+                <h4 class="widget-title">Useful links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a href="aboutus.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="contactus.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- USEFUL LINKS -->
+            <div class="col-lg-3 col-md-6 col-xs-12 footer-col-3 mobile-footer">
+              <div class="widget widget_services inline-links">
+                <h4 class="widget-title">Our Services</h4>
+                <ul>
+                  <li>
+                    <a href="residental.html">Residential Construction</a>
+                  </li>
+                  <li>
+                    <a href="commersial.html">Commercial Office</a>
+                  </li>
+                  <li>
+                    <a href="project mmt.html">Project Management</a>
+                  </li>
+                  <li>
+                    <a href="cons-contact.html">Construction Contracts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- RESENT POST -->
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="widget widget_address_outer">
+                <h4 class="widget-title">Contact Us</h4>
+                <ul class="widget_address">
+                  <p>Madinaguda, Hyderabad, Telangana - 500049.</p>
+                  <li>
+                    (+91) 99667 90999
+
+                  </li>
+                  +(91) 9948 33 3143
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER COPYRIGHT -->
+      <div class="copyrights">
+        <div class="overlay-main"></div>
+        <div class="container">
+          <div class="col-md-12">
+            <div class="row text-center">
+              <div class="col-md-6 p-l0 p-r0">
+                <div class="text-md-left">
+                  <span class="copyrights-text">© 2024 Sri Kartikeya -Construction and Infra All
+                    Right Reserved.</span>
+                </div>
+              </div>
+              <div class="col-md-6 p-l0 p-r0">
+                <div class="text-md-right">
+                  <span class="copyrights-text">Designed By
+                    <a href="" target="_blank">The Patterns Company</a>.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <ul id="social-sidebar">
+
+      <li>
+
+        <a href="#" target="_blank" class="fa fa-facebook"><span>Facebook</span></a>
+
+      </li>
+
+      <li>
+
+        <a href="#" target="_blank" class="fa fa-twitter"><span>Twitter</span></a>
+
+      </li>
+
+
+
+      <li>
+
+        <a href="#" target="_blank" class="fa fa-instagram"><span>Instagram</span></a>
+
+      </li>
+
+      <li>
+
+        <a href="#" target="_blank" class="fa fa-linkedin"><span>Linkedin</span></a>
+
+      </li>
+
+    </ul>
+
+    <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span>
+    </button>
+  </div><!-- BUTTON TOP START -->
+  <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span>
+  </button>
+  </div>
+  <!-- LOADING AREA START ===== -->
+  <!--<div class="loading-area">
+      <div class="loading-box"></div>
+      <div class="loading-pic">
+          <div>
+              <img src="img/preloader1old.gif" alt="" />
+          </div>
+      </div>
+  </div>-->
+
+  <!-- JAVASCRIPT  FILES ========================================= -->
+  <script src="js/jquery.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('.second-button').on('click', function () {
+
+        $('.animated-icon2').toggleClass('open');
+      });
+    });
+  </script>
+  <!-- BOOTSTRAP.MIN JS -->
+  <script src="js/wizard.js"></script>
+
+  <!-- wizard JS -->
+
+  <script src="js/magnific-popup.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/counterup.min.js"></script>
+  <script src="js/waypoints-sticky.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+
+  <!-- MASONRY  -->
+
+  <script src="js/owl.carousel.min.js"></script>
+
+  <!-- OWL  SLIDER  -->
+
+  <script src="js/jquery.owl-filter.js"></script>
+  <script src="js/stellar.min.js"></script>
+
+  <!-- PARALLAX BG IMAGE   -->
+
+  <script src="js/custom.min.js"></script>
+  <!-- <script src="js/custom.js"></script> -->
+
+  <!-- CUSTOM FUCTIONS  -->
+
+  <script src="js/shortcode.js"></script>
+
+  <!-- SHORTCODE FUCTIONS  -->
+
+  <script src="js/jquery.bgscroll.js"></script>
+
+  <!-- BACKGROUND SCROLL -->
+
+  <script src="js/switcher.js"></script>
+
+
+
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/revolution-plugin.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW.init();
+  </script>
+  <script src="js/bootstrap-multiselect.min.js"></script>
+
+  <script>
+    document.getElementById('bannerForm').addEventListener('submit', function (event) {
+      // Prevent the default form submission
+      event.preventDefault();
+
+      // Get form data
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const query = document.getElementById('query').value;
+
+      // Check if required fields are filled
+      if (!name || !phone || !email) {
+        alert('Please fill all required fields.');
+        return;
+      }
+
+      // Format the message with new lines
+      const message = `Name: ${name}%0A`
+        + `Phone: ${phone}%0A`
+        + `Email: ${email}%0A`
+        + `Query: ${query}`;
+
+      // Generate WhatsApp link
+      const whatsappLink = `https://wa.me/9966790999?text=${message}`;
+
+      // Open WhatsApp link
+      window.open(whatsappLink, '_blank');
+      document.getElementById('bannerForm').reset();
+    });
+  </script>
+
+
+</body>
+
+
+
+</html>

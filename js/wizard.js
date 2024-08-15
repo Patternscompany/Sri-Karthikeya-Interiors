@@ -21,6 +21,21 @@ function refreshAnimation(t, e) {
         transition: "all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1)"
     })
 }
+
+$(document).ready(function(){
+    $('.counter-value').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 2000,
+            easing: 'easeInQuad',
+            step: function (now){
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+});
+
 function debounce(t, e, i) {
     var n;
     return function() {
