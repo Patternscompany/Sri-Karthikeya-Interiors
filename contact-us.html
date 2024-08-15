@@ -59,7 +59,7 @@
 </head>
 <body>
       <!-- HEADER START -->
-      <di class="page-wraper">
+      <div class="page-wraper">
         <header class="site-header header-style-1">
           <div class="sticky-header main-bar-wraper">
             <div class="main-bar">
@@ -78,14 +78,14 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-      
+    
                 <!-- MAIN Vav -->
-      
-      
+    
+    
                 <div class="header-nav navbar-collapse collapse ">
                   <a href="index.html" class="desktop">
-                    <img src="img/logo-light.png" alt="logo" class="logo-img" />
-      
+                    <img src="img/logo-light.png" alt="Sri Kartikeya Infra" class="logo-img" />
+    
                   </a>
                   <ul class="nav navbar-nav">
                     <!--<li class="active"><a href="">Home</a></li>-->
@@ -96,28 +96,28 @@
                       <a href="javascript:;">Services<span class="caret small_caret white"></span></a>
                       <ul class="sub-menu has-child">
                         <li>
-                          <a href="residental.html">
-                            <img alt="Service icon" src="img/house.png" />
+                          <a href="residential.html">
+                            <img alt="Sri Kartikeya Infra Residential" src="img/house.png" />
                             Residential Construction
                           </a>
                         </li>
-      
+    
                         <li>
-                          <a href="commersial.html">
-                            <img alt="Service icon" src="img/building (1).png" />
+                          <a href="commercial.html">
+                            <img alt="Sri Kartikeya Infra Commercial" src="img/building (1).png" />
                             Commercial Office
                           </a>
                         </li>
-      
+    
                         <li>
-                          <a href="project mmt.html">
-                            <img alt="Service icon" src="img/project1.png" />
+                          <a href="project-mmt.html">
+                            <img alt="Sri Karthikeya Project MMT" src="img/project1.png" />
                             Project Management
                           </a>
                         </li>
                         <li>
-                          <a href="cons-contact.html">
-                            <img alt="Service icon" src="img/Architect.png" />
+                          <a href="construction-contracts.html">
+                            <img alt="Sri Kartikeya Construction Contract" src="img/Architect.png" />
                             Construction Contracts
                           </a>
                         </li>
@@ -130,12 +130,12 @@
                       <a href="aboutus.html">About Us</a>
                     </li>
                     <li class="active">
-                      <a href="contactus.html">Contact us</a>
+                      <a href="contact-us.html">Contact us</a>
                     </li>
-      
+    
                   </ul>
                 </div>
-      
+    
                 <script>
                   function DropDown(el) {
                     this.dd = el;
@@ -145,7 +145,7 @@
                     this.index = -1;
                     this.initEvents();
                   }
-      
+    
                   // function jquery(data){
                   //     $.ajax({
                   //         url: '/get_price',
@@ -157,7 +157,7 @@
                   //         }
                   //     });
                   // }
-      
+    
                   function jquery(thi) {
                     var city = thi.getAttribute("value");
                     var baseurl = "https://www.wehouse.in/";
@@ -196,7 +196,7 @@
                     xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
                     xmlhttp.send();
                   }
-      
+    
                   function popupjquery(city) {
                     var baseurl = "https://www.wehouse.in/";
                     //  alert(baseurl);
@@ -238,12 +238,12 @@
                     xmlhttp.open("GET", baseurl + "Home/get_price?" + dat, true);
                     xmlhttp.send();
                   }
-      
+    
                   function pricetag(beforepopup, afterpopup) {
                     $(".before_popup").css("display", beforepopup);
                     $(".after_popup").css("display", afterpopup);
                   }
-      
+    
                   function setSelectedValue(selectObj, valueToSet) {
                     for (var i = 0; i < selectObj.options.length; i++) {
                       if (selectObj.options[i].text == valueToSet) {
@@ -252,7 +252,7 @@
                       }
                     }
                   }
-      
+    
                   function setservicecityprice(id, value) {
                     var obj = document.getElementById(id);
                     if (obj !== null) {
@@ -260,7 +260,7 @@
                     }
                     // alert(value);
                   }
-      
+    
                   DropDown.prototype = {
                     initEvents: function () {
                       var obj = this;
@@ -289,7 +289,7 @@
                       return this.index;
                     },
                   };
-      
+    
                   $(function () {
                     // create new variable for each menu
                     var dd1 = new DropDown($("#noble-gases"));
@@ -455,18 +455,18 @@
               <ul class="social-icons mt-social-links" style="margin-top: 20px">
                 <!-- <li><a href="javascript:void(0);" class="fa fa-google"></a></li>  -->
                 <li>
-                  <a href="https://www.facebook.com/srikartikeyaconstructions/" target="_blank"
+                  <a href="https://www.facebook.com/profile.php?id=61563397469375" target="_blank"
                     class="fa fa-facebook"></a>
                 </li>
                 <li>
-                  <a href="" target="_blank" class="fa fa-twitter"></a>
+                  <a href="https://x.com/skartikeyainfra" target="_blank" class="fa fa-twitter"></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/srikartikeyaconstructions/" target="_blank"
+                  <a href="https://www.instagram.com/kartikeyainfra/" target="_blank"
                     class="fa fa-instagram"></a>
                 </li>
                 <li>
-                  <a href="" target="_blank" class="fa fa-linkedin"></a>
+                  <a href="https://www.linkedin.com/company/srikartikeya-infra" target="_blank" class="fa fa-linkedin"></a>
                 </li>
               </ul>
             </div>
@@ -485,7 +485,7 @@
                   <a href="portfolio.html">Portfolio</a>
                 </li>
                 <li>
-                  <a href="contactus.html">Contact Us</a>
+                  <a href="contact-us.html">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -497,16 +497,16 @@
               <h4 class="widget-title">Our Services</h4>
               <ul>
                 <li>
-                  <a href="residental.html">Residential Construction</a>
+                  <a href="residential.html">Residential Construction</a>
                 </li>
                 <li>
-                  <a href="commersial.html">Commercial Office</a>
+                  <a href="commercial.html">Commercial Office</a>
                 </li>
                 <li>
-                  <a href="project mmt.html">Project Management</a>
+                  <a href="project-mmt.html">Project Management</a>
                 </li>
                 <li>
-                  <a href="cons-contact.html">Construction Contracts</a>
+                  <a href="construction-contracts.html">Construction Contracts</a>
                 </li>
               </ul>
             </div>
@@ -518,10 +518,9 @@
               <ul class="widget_address">
                 <p>Madinaguda, Hyderabad, Telangana - 500049.</p>
                 <li>
-                  (+91) 99667 90999
-
+                  +91-99667 90999
                 </li>
-                +(91) 9948 33 3143
+                <li>+91-9948 33 3143</li>
               </ul>
             </div>
           </div>
@@ -560,6 +559,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </footer>
   <!-- FOOTER END -->
