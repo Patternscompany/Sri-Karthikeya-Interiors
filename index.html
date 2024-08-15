@@ -94,7 +94,7 @@
                   <a href="index.html">Home</a>
                 </li>
                 <li class="submenu-toogle">
-                  <a href="javascript:;">Services<span class="caret small_caret white"></span></a>
+                  <a href="javascript:;">Services<i class="fa fa-angle-down"></i></a>
                   <ul class="sub-menu has-child">
                     <li>
                       <a href="residental.html">
@@ -337,12 +337,12 @@
 
             <div class="container">
               <div class="carousel-caption col-md-6">
-                <h3 class="banner_heading mobile_heading">
+                <h1 class="banner_heading mobile_heading">
                   <span class="ban-title anil mobile_heading">Welcome to<br></span>
                   <span class="text-white fw-normal sasi">'Sri Kartikeya Infra</span><br />Hyderabad's <br>
                   <span class="text-capital mobile_heading">Best </span>
                   powered<br />Infra company
-                </h3>
+                </h1>
                 <br />
                 <a href="#ser_sec1" data-toggle="modal" data-target="#with-form"
                   class="site-button btn-effect banner_btn after_popup" style="display: none">Get A Quote</a>
@@ -1532,6 +1532,18 @@
       window.open(whatsappLink, '_blank');
       document.getElementById('bannerForm').reset();
     });
+
+    const btn = document.querySelector(".fa-angle-down");
+const submenu = document.querySelector(".header-nav .nav > li .sub-menu");
+
+btn.addEventListener("click", () => {
+  submenu.classList.toggle("active");
+  btn.classList.toggle("fa-angle-up");
+  btn.classList.toggle("fa-angle-down"); // Toggle between up and down icons
+});
+
+
+
   </script>
 
 </body>

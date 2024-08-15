@@ -7759,7 +7759,9 @@ recent-posts-entry-date .mt-post-info .post-title {
   + .submenu-toogle.fa.fa-angle-right:before {
   content: "\f107";
 }
-
+i.fa-angle-down,i.fa-angle-up{
+ margin-left: 0.5rem !important;
+}
 @media only screen and (max-width: 991px) {
   header .logo {
     display: block;
@@ -7860,7 +7862,10 @@ recent-posts-entry-date .mt-post-info .post-title {
     width: auto;
     background: #f9f9f9;
   }
-
+  
+  .header-nav .nav > li .sub-menu.active{
+    display: block;
+  }
   .header-nav .nav > li ul.mega-menu ul {
     display: block;
   }
