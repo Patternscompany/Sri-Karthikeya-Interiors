@@ -352,7 +352,7 @@
                   <span>Book a free Consultation</span><span class="fold bottom right"></span><span
                     class="fold bottom left"></span>
                 </div>
-                <form method="POST" id="bannerForm">
+                <!-- <form method="POST" id="bannerForm">
                   <div class="row">
                     <div class="form-group consult">
                       <label class="control-label">Name</label>
@@ -377,7 +377,55 @@
                       </button>
                     </div>
                   </div>
-                </form>
+                </form> -->
+                <form method="post" action="//submit.form" onSubmit="return validateForm();">
+                  <div style="max-width: 400px;">
+                  </div>
+                  <div style="padding-bottom: 10px;">Name<span style="color: red;"> *</span><br/>
+                  <input type="text" id="data_1" name="data_1" style="max-width : 100%;" class="form-control"/>
+                  </div>
+                  <div style="padding-bottom: 10px;">Number<span style="color: red;"> *</span><br/>
+                  <input type="number" id="data_2" name="data_2" style="max-width : 100%;" class="form-control"/>
+                  </div>
+                  <div style="padding-bottom: 10px;">Email<span style="color: red;"> *</span><br/>
+                  <input type="text" id="data_3" name="data_3" style="max-width : 100%;" class="form-control"/>
+                  </div>
+                  <div style="padding-bottom: 10px;">Enquiry Message<br/>
+                  <textarea id="data_4" false name="data_4" style="max-width : 100%;" rows="3" class="form-control"></textarea>
+                  </div>
+                  <div style="padding-bottom: 10px;"><input class="m-b20 m-t10 site-button btn-effect text-uppercase m-r25" name="skip_Submit" value="Submit" type="submit"/></div>
+                  <div>
+                  <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+                  <script src="https://www.100forms.com/js/FORMKEY:NTYP2JMRLL22" type="text/javascript"></script>
+                  </div>
+                  </form>
+                  
+                  <script type="text/javascript">
+                  function validateForm() {
+                  if (isEmpty(document.getElementById('data_1').value.trim())) {
+                  alert('Name is required!');
+                  return false;
+                  }
+                  if (isEmpty(document.getElementById('data_2').value.trim())) {
+                  alert('Number is required!');
+                  return false;
+                  }
+                  if (isEmpty(document.getElementById('data_3').value.trim())) {
+                  alert('Email is required!');
+                  return false;
+                  }
+                  if (!validateEmail(document.getElementById('data_3').value.trim())) {
+                  alert('Email must be a valid email address!');
+                  return false;
+                  }
+                  return true;
+                  }
+                  function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+                  function validateEmail(email) {
+                  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+                  return isEmpty(email) || re.test(email);
+                  }
+                  </script>
               </div>
             </div>
           </div>
@@ -387,6 +435,9 @@
       <!--Fade SLIDER END -->
 
       <style>
+        #lnk100{
+          color: white;
+        }
         .contactUsForm{
           width: 100%;
         }
